@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partials/head")%>
+
+    <body>
+
+        <%- include("../partials/header")%>
+
+            <main class="main-container">
+
+                <div class="glider-contain-banner">
+                    <div class="glider-banner">
+                        <div>
+                            <figure>
+                                <img src="/images/banner-summer.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="/images/banner-home-2.png" alt="">
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="/images/banner-home-3.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <button aria-label="Previous" class="prev-banner">«</button>
+                    <button aria-label="Next" class="next-banner">»</button>
+                    <div role="tablist" class="dots"></div>
+                </div>
+
+                <section class="products-offers">
+
+                    <h2 class="main-tittle">Aprovecha las mejores bebidas</h2>
+
+                    <div class="article-tittle">
+                        <h4>Vinos - Hasta 45% off</h4>
+                        <a href="#">Ver más</a>
+                    </div>
+
+                    <div class="glider-contain">
+                        <div class="glider">
+                            <% productsVinos.forEach(p=> { %>
+                                <div class="products">
+                                    <article class="product-1">
+                                        <a href="/detalle-de-producto/<%= p.id %>">
+                                            <figure>
+                                                <img src="/images/products/<%= p.image %>" alt="">
+                                            </figure>
+                                            <div class="product-details">
+                                                <p class="price-old">
+                                                    <%= toThousand(p.price) %>
+                                                </p>
+                                                <ul>
+                                                    <li class="price-actual">
+                                                        <%= toThousand((p.price - (p.price * p.discount) / 100))%>
+                                                    </li>
+                                                    <li class="discount">
+                                                        <%= p.discount %>% OFF
+                                                    </li>
+                                                </ul>
+                                                <h5>
+                                                    <%= p.name %>
+                                                </h5>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                                <% }) %>
+
+                        </div>
+
+                        <button aria-label="Previous" class="glider-prev">«</button>
+                        <button aria-label="Next" class="glider-next">»</button>
+                        <div role="tablist" class="dots"></div>
+                    </div>
+
+                    <div class="article-tittle">
+                        <h4>Espumantes - Hasta 50% off</h4>
+                        <a href="#">Ver más</a>
+                    </div>
+
+                    <div class="glider-contain">
+                        <div class="glider2">
+                            <%= console.log(productsEspumantes) %>
+                                <% productsEspumantes.forEach(p=> { %>
+                                    <div class="products">
+                                        <article class="product-1">
+                                            <a href="/detalle-de-producto/<%= p.id %>">
+                                                <figure>
+                                                    <img src="/images/products/<%= p.image %>" alt="">
+                                                </figure>
+                                                <div class="product-details">
+                                                    <p class="price-old">
+                                                        <%= toThousand(p.price) %>
+                                                    </p>
+                                                    <ul>
+                                                        <li class="price-actual">
+                                                            <%= toThousand((p.price - (p.price * p.discount) / 100))%>
+                                                        </li>
+                                                        <li class="discount">
+                                                            <%= p.discount %>% OFF
+                                                        </li>
+                                                    </ul>
+                                                    <h5>
+                                                        <%= p.name %>
+                                                    </h5>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <% }) %>
+                        </div>
+
+                        <button aria-label="Previous" class="glider-prev2">«</button>
+                        <button aria-label="Next" class="glider-next2">»</button>
+                        <div role="tablist" class="dots"></div>
+                    </div>
+
+                    <div class="article-tittle">
+                        <h4>Whiskys - Hasta 35% off</h4>
+                        <a href="#">Ver más</a>
+                    </div>
+
+                    <div class="glider-contain">
+                        <div class="glider3">
+                            <% productsWhiskys.forEach(p=> { %>
+                                <div class="products">
+                                    <article class="product-1">
+                                        <a href="/detalle-de-producto/<%= p.id %>">
+                                            <figure>
+                                                <img src="/images/products/<%= p.image %>" alt="">
+                                            </figure>
+                                            <div class="product-details">
+                                                <p class="price-old">
+                                                    <%= toThousand(p.price) %>
+                                                </p>
+                                                <ul>
+                                                    <li class="price-actual">
+                                                        <%= toThousand((p.price - (p.price * p.discount) / 100))%>
+                                                    </li>
+                                                    <li class="discount">
+                                                        <%= p.discount %>% OFF
+                                                    </li>
+                                                </ul>
+                                                <h5>
+                                                    <%= p.name %>
+                                                </h5>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                                <% }) %>
+                        </div>
+
+                        <button aria-label="Previous" class="glider-prev3">«</button>
+                        <button aria-label="Next" class="glider-next3">»</button>
+                        <div role="tablist" class="dots"></div>
+                    </div>
+
+                    <div class="article-tittle">
+                        <h4>Licores - Hasta 25% off</h4>
+                        <a href="#">Ver más</a>
+                    </div>
+
+                    <div class="glider-contain">
+                        <div class="glider4">
+                            <% productsLicores.forEach(p=> { %>
+                                <div class="products">
+                                    <article class="product-1">
+                                        <a href="/detalle-de-producto/<%= p.id %>">
+                                            <figure>
+                                                <img src="/images/products/<%= p.image %>" alt="">
+                                            </figure>
+                                            <div class="product-details">
+                                                <p class="price-old">
+                                                    <%= toThousand(p.price) %>
+                                                </p>
+                                                <ul>
+                                                    <li class="price-actual">
+                                                        <%= toThousand((p.price - (p.price * p.discount) / 100))%>
+                                                    </li>
+                                                    <li class="discount">
+                                                        <%= p.discount %>% OFF
+                                                    </li>
+                                                </ul>
+                                                <h5>
+                                                    <%= p.name %>
+                                                </h5>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                                <% }) %>
+                        </div>
+
+                        <button aria-label="Previous" class="glider-prev4">«</button>
+                        <button aria-label="Next" class="glider-next4">»</button>
+                        <div role="tablist" class="dots"></div>
+                    </div>
+
+                    <div class="article-tittle">
+                        <h4>Otros - Hasta 30% off</h4>
+                        <a href="#">Ver más</a>
+                    </div>
+
+                    <div class="glider-contain">
+                        <div class="glider5">
+                            <% productsOtros.forEach(p=> { %>
+                                <div class="products">
+                                    <article class="product-1">
+                                        <a href="/detalle-de-producto/<%= p.id %>">
+                                            <figure>
+                                                <img src="/images/products/<%= p.image %>" alt="">
+                                            </figure>
+                                            <div class="product-details">
+                                                <p class="price-old">
+                                                    <%= toThousand(p.price) %>
+                                                </p>
+                                                <ul>
+                                                    <li class="price-actual">
+                                                        <%= toThousand((p.price - (p.price * p.discount) / 100))%>
+                                                    </li>
+                                                    <li class="discount">
+                                                        <%= p.discount %>% OFF
+                                                    </li>
+                                                </ul>
+                                                <h5>
+                                                    <%= p.name %>
+                                                </h5>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                                <% }) %>
+                        </div>
+
+                        <button aria-label="Previous" class="glider-prev5">«</button>
+                        <button aria-label="Next" class="glider-next5">»</button>
+                        <div role="tablist" class="dots"></div>
+                    </div>
+                </section>
+
+                <section class="popular-products">
+                    <div class="banner-drinks">
+                        <figure>
+                            <img src="/images/banner-bebidas.jpg" alt="">
+                        </figure>
+                    </div>
+                    <h3>¡Comprá nuestros productos con descuento y recibilos hoy mismo!</h3>
+                    <h2>LOS MAS POPULARES</h2>
+
+                    <div class="glider-contain">
+                        <div class="glider6">
+                            <% productsPopulares.forEach(p=> { %>
+                                <div class="products">
+                                    <article class="product-1">
+                                        <a href="/detalle-de-producto/<%= p.id %>">
+                                            <figure>
+                                                <img src="/images/products/<%= p.image %>" alt="">
+                                            </figure>
+                                            <div class="product-details">
+                                                <p class="price-old">
+                                                    <%= toThousand(p.price) %>
+                                                </p>
+                                                <ul>
+                                                    <li class="price-actual">
+                                                        <%= toThousand((p.price - (p.price * p.discount) / 100))%>
+                                                    </li>
+                                                    <li class="discount">
+                                                        <%= p.discount %>% OFF
+                                                    </li>
+                                                </ul>
+                                                <h5>
+                                                    <%= p.name %>
+                                                </h5>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                                <% }) %>
+                        </div>
+
+                        <button aria-label="Previous" class="glider-prev6">«</button>
+                        <button aria-label="Next" class="glider-next6">»</button>
+                        <div role="tablist" class="dots"></div>
+                    </div>
+                </section>
+
+                <div class="benefits-user">
+
+                    <div class="payment-methods">
+                        <figure>
+                            <img src="/images/tarjeta.webp" alt="">
+                        </figure>
+                        <h2>Elegí cómo pagar</h2>
+                        <p>Podés pagar con tarjeta, débito, efectivo o
+                            hasta en 12 cuotas sin interes.
+                        </p>
+                    </div>
+
+                    <hr>
+
+                    <div class="free-shipping">
+                        <figure>
+                            <img src="/images/envio.webp" alt="">
+                        </figure>
+                        <h2>Envío gratis</h2>
+                        <p>Recuerda que su compra debe tener
+                            un minimo de $15000 para este beneficio.
+                        </p>
+                    </div>
+
+                    <hr>
+
+                    <div class="safe-purchase">
+                        <figure>
+                            <img src="/images/seguridad.webp" alt="">
+                        </figure>
+                        <h2>Seguridad siempre</h2>
+                        <p>¿Se arrepiente de su compra? ¡Devuelva su compra!
+                            Nuestros clientes siempres estaran protegidos.
+                        </p>
+                    </div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=11211121" class="btn-wsp" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </main>
+
+            <%- include("../partials/footer")%>
+
+
+
+                <!--- Glider library --->
+                <script src="/js/library/glider.min.js" defer></script>
+                <script src="/js/configs/configGlider.js" defer></script>
+    </body>
+
+</html>

@@ -1,0 +1,118 @@
+main.login-inicio {
+    max-width: 100%;
+    margin: auto;
+    background-color: var(--blancoClaro);
+    padding: 20px;
+    border: 1px solid black;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.login-titulo{line-height: 1.5;}
+
+.login-email{
+    margin-bottom: 15px;
+}
+
+.login-email1{
+    display: none;
+}
+
+.login-email2{
+    width: 65%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: transparent;
+    background-color: var(--grisSuave);
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.login-contraseña{
+    margin-bottom: 10px;
+}
+
+.login-contraseña1{
+    display: none;
+}
+
+.login-contraseña2{
+    width: 65%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: transparent;
+    background-color: var(--grisSuave);
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.login-ingresar{
+    margin-top: 10px;
+    background-color: var(--letrasHeader);
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    border: transparent;
+    font-weight: bold;
+}
+
+#login-cuenta{
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    main.login-inicio {}
+    
+    .login-titulo{
+    font-size: 50px;
+}
+    
+    .login-email{
+    padding: 10px;
+}
+    
+    .login-email1{}
+    
+    .login-email2{
+    padding: 15px;
+}
+    
+    .login-contraseña{
+    padding: 10px;
+}
+    
+    .login-contraseña1{}
+    
+    .login-contraseña2{
+    padding: 15px;
+}
+    
+    .login-ingresar{}
+    
+    #login-cuenta{}
+}
+
+@media (max-width:1024px) {
+    main.login-inicio {
+}
+    
+    .login-titulo{
+}
+    
+    .login-email{}
+    
+    .login-email1{}
+    
+    .login-email2{
+}
+    
+    .login-contraseña{}
+    
+    .login-contraseña1{}
+    
+    .login-contraseña2{}
+    
+    .login-ingresar{}
+    
+    #login-cuenta{}
+}

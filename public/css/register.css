@@ -1,0 +1,179 @@
+.register-body {
+  display: flex;
+  flex-direction: column;
+}
+.registrarse {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.registrarse form {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.registrarse form .nomape {
+  display: flex;
+  flex-direction: row;
+  width: 77.5vw;
+  justify-content: space-between;
+}
+
+.registrarse form .nomape input {
+  width: 50%;
+}
+
+.registrarse form .email {
+  width: 100%;
+  display: flex;
+  padding-top: 1rem;
+}
+
+.registrarse form .email input {
+  width: 75.5vw;
+}
+
+.registrarse form .data {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.registrarse form .data .contrep {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.registrarse form .data .contrep input {
+  width: 75.5vw;
+}
+
+.registrarse form .data .normas {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.registrarse form .data .normas ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.registrarse form .data .normas ul li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.registrarse form .data .normas ul li i {
+  color: var(--letrasHeader);
+}
+
+.registrarse form .data .normas ul li p {
+  margin: 0;
+}
+
+.registrarse form input {
+  border: none;
+  background-color: var(--grisSuave);
+  border-radius: 9px;
+  margin: 3px;
+  padding: 6px;
+}
+
+.registrarse form .button {
+  padding: 13px;
+
+  display: flex;
+
+  justify-content: center;
+
+  height: 3.6rem;
+}
+
+.registrarse form .button button {
+  font-size: 1rem;
+
+  border-radius: 0.5rem;
+
+  border: none;
+
+  background-color: var(--letrasHeader);
+  padding: 0 6px 0 6px;
+}
+
+.registrarse form .data {
+  display: flex;
+  flex-direction: column;
+}
+
+.registrarse form .data .contrep {
+  width: 100%;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .registrarse form .data {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .registrarse form .data .contrep {
+    width: 50%;
+    display: flex;
+  }
+
+  .registrarse form .data .contrep input {
+    width: 90%;
+  }
+
+  .registrarse form .data .normas {
+    width: 50%;
+  }
+
+  .p4 {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .registrarse form .data {
+    height: 14vh;
+    padding-top: 10px;
+  }
+
+  .registrarse form .data .normas {
+    height: 100%;
+    padding-top: 10px;
+  }
+
+  .registrarse form .data .normas ul li {
+    margin: 0;
+  }
+
+  .registrarse form .data .contrep {
+    align-self: start;
+
+    gap: 1rem;
+
+    padding-top: 1rem;
+  }
+  .registrarse form .nomape {
+    padding-top: 1rem;
+  }
+  .registrarse form input {
+    height: 3vh;
+  }
+}

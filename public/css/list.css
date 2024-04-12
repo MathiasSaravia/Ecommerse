@@ -1,0 +1,58 @@
+.alert-delete{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #11111167;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.alert-delete--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.alert-container h2{
+    color: black;
+}
+
+.alert-delete .alert-container{
+    margin: auto;
+    width: 80%;
+    max-width: 500px;
+    max-height: 90%;
+    background-color: aliceblue;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    text-align: center;
+}
+
+.alert-container .action-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alert-container .delete{
+    background-color: red;
+}
+  
+.action-button:hover {
+    background-color: #45a049;
+}
+
+.delete:hover{
+    background-color: rgb(148, 5, 5);
+}
+
+
+

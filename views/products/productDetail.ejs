@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include("../partials/head")%>
+
+  <body>
+    <%- include("../partials/header")%>
+
+      <main class="product-detail">
+        <h2 class="h6 p-4">
+          <%= product.name %>
+        </h2>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner" style="height: 250px;">
+            <div class="carousel-item active h-100">
+              <img src="/images/products/<%= product.image %>" class="d-block w-100 h-100" alt="..."
+                style="object-fit: contain;">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="/images/products/<%= product.image %>" class="d-block w-100 h-100" alt="..."
+                style="object-fit: contain;">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="/images/products/<%= product.image %>" class="d-block w-100 h-100" alt="..."
+                style="object-fit: contain;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" class="poi-custom-rounder" type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" class="poi-custom-rounder" type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="card-custom">
+          <div class="card-body">
+            <p class="card-text">Envios A todo el pais</p>
+            <p class="card-text">Cantidad disponible: x20 </p>
+            <p class="card-text">Sin impuestos, Ni retenciones</p>
+            <a href="/Carrito" class="btn btn-dark ">Agregar a Carrito</a>
+          </div>
+        </div>
+
+        <div class="produc-Precio ">
+          <p class="m-0">
+            <%= product.price %>
+          </p>
+          <p class="m-0">Con <%= product.discount %>% queda en: <%= toThousand((product.price - (product.price *
+                product.discount) / 100))%>
+          </p>
+          <p class="m-0">ver los medios de pago</p>
+          <div><a href="/Carrito">Agregar a carrito</a></div>
+        
+        </div>
+     <div class="ms-5"><a href="/admin/editar-producto/<%= product.id %>" class="btn btn-dark">editar</a></div>
+        <div class="caracteristicas-product ">
+          <h5>Caracteristas</h5>
+
+          <ul>
+            <li>
+              <%= product.name %>
+            </li>
+            <li>Incluye estuche</li>
+            <li>Graduacion alcoholica del 40%</li>
+            <li>Botella de vidrio, conserva mejor el sabor</li>
+          </ul>
+
+        </div>
+
+        <h3>Productos similares</h3>
+        <div class="Productos-similares" style="height: 192px;">
+
+          <section class="Products-similares-1 ">
+            <figure class="figure-product" style="height: 100px;">
+              <img src="/images/products/White_Horse_Fine_Old_Blended_Scotch.webp" class="w-100 h-100 "
+                style="object-fit: contain;" alt="">
+            </figure>
+            <p class="m-0">White Horse Fine </p>
+          </section>
+
+          <section class="Products-similares">
+            <figure class="figure-product" style="height: 100px;">
+              <img src="/images/products/Johnnie_Walker_Swing_Escoces_Blended_750ml.png" class="w-100 h-100"
+                style="object-fit: contain;" alt="">
+            </figure>
+            <p class="m-0">Johnnie Walker Escoces </p>
+          </section>
+
+          <section class="Products-similares-3 ">
+            <figure class="figure-product" style="height: 100px;">
+              <img src="/images/products/Champagne_Norton_extra_brut_750ml.webp" class="w-100 h-100"
+                style="object-fit: contain;" alt="">
+            </figure>
+            <p class="m-0">Champagne Norton </p>
+          </section>
+
+          <section class="Products-similares-4">
+            <figure class="figure-product" style="height: 100px;">
+              <img src="/images/products/Angelica_Zapata_Malbec_Alta_750cc.webp" class="w-100 h-100"
+                style="object-fit: contain;" alt="">
+            </figure>
+            <p class="m-0">Malbec Angelica</p>
+          </section>
+
+
+
+        </div>
+
+      </main>
+
+      <%- include("../partials/footer")%>
+
+        <%- include("../partials/scripts")%>
+
+  </body>
+
+</html>

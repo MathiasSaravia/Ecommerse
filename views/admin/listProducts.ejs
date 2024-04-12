@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="w-100">
+
+    <main class="admin-main d-flex flex-column">
+
+
+        <h1 class="w-100 text-center">Lista de Productos</h1>
+        <section class="admin-section container">
+            <div class="input-group mb-3">
+                <input id="filterData" type="text" class="form-control" placeholder="Recipient's username"
+                    aria-label="Recipient's username" aria-describedby="filterBtn">
+                <button class="btn btn-outline-secondary" type="button" id="filterBtn"><i
+                        class="bi bi-search"></i></button>
+            </div>
+            <div class="table-responsive-sm overflow-auto">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Categoria</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider" id="tbody_dinamic">
+
+                        <% products.forEach(p=> { %>
+                            <tr>
+                                <th scope="row">
+                                    <%= p.id %>
+                                </th>
+                                <td class="text-center">
+                                    <%= p.name %>
+                                </td>
+                                <td class="text-center">
+                                    <%= p.price %>
+                                </td>
+                                <td class="text-center">
+                                    <%= p.category %>
+                                </td>
+                                <td>
+                                    <form action="/admin/editar-producto/<%= p.id %>" method="GET">
+                                        <button class="btn btn-primary"><i class="bi bi-pen"></i></button>
+                                    </form>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal<%= p.id %>-d">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+
+                                    <div class="modal fade" id="exampleModal<%= p.id %>-d" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <h2>Estas Seguro que deseas eliminar este articulo?</h2>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">No</button>
+
+                                                    <form action="/admin/eliminar-producto/<%= p.id %>?_method=DELETE"
+                                                        method="POST">
+                                                        <button class="btn btn-danger"
+                                                            data-bs-dismiss="modal">Si</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal<%= p.id %>">
+                                        <i class="bi bi-three-dots-vertical"></i>
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal<%= p.id %>" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                        <%= p.name %>
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-center">
+                                                    <img class="w-25 p-2" src="/images/products/<%= p.image %>"
+                                                        alt="image">
+                                                    <h5>
+                                                        <%= p.price %>
+                                                    </h5>
+                                                    <p>
+                                                        <%= p.description %>
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <div class="alert-delete">
+                                    <div class="alert-container">
+                                        <h2>¿Seguro que quieres eliminar este producto?</h2>
+                                        <form action="/eliminar-producto/<%= p.id %>?_method=DELETE" method="POST">
+                                            <button type="submit" class="action-button delete">Eliminar</button>
+                                            <button class="action-button btn-cancel">Cancelar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                </th>
+                                <% }) %>
+
+
+                                    <!-- <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal2">
+                                            Launch demo modal
+                                        </button>
+
+                                    <div class="modal fade" id="exampleModal2" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save
+                                                        changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </td> -->
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Launch demo modal
+            </button> -->
+
+            <!-- Modal -->
+            <!-- <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!-- Filtro -->
+    <!-- <script>
+        const filterInput = document.getElementById('filterData');
+        const filterBtn = document.getElementById('filterBtn');
+        const tbodyDinamic = document.getElementById('tbody_dinamic');
+        const products = JSON.parse('<%- JSON.stringify(products) %>');
+
+        function searchFilter(products, string) {
+            if (!string.trim()) {
+                return products;
+            } else {
+                return products.filter(product => product.name.toLowerCase().includes(string.toLowerCase()));
+            }
+        }
+
+        function updateTable(filteredProducts) {
+            tbodyDinamic.innerHTML = '';
+            if (filteredProducts == 0) {
+                tbodyDinamic.innerHTML = '<tr><td colspan="8" class="text-center">No hay resultados</td></tr>';
+            }
+            filteredProducts.forEach(product => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                <th scope="row">${product.id}</th>
+                <td class="text-center">${product.name}</td>
+                <td class="text-center">${product.price}</td>
+                <td class="text-center">${product.stock}</td>
+                <td class="text-center">${product.category}</td>
+                <td><button class="btn btn-primary"><a href="/admin/editar-producto"><i class="bi bi-pen"></i></a></button></td>
+                <td><button class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
+                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${product.name + "-" + product.id}">
+                    <i class="bi bi-three-dots-vertical"></i>
+            </button>
+            <div class="modal fade" id="${product.name + "-" + product.id}" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+            `;
+
+                tbodyDinamic.appendChild(tr);
+            });
+        }
+
+        updateTable(searchFilter(products, filterInput.value));
+
+        function handleFilter(products) {
+            const filteredProducts = searchFilter(products, filterInput.value);
+            updateTable(filteredProducts);
+        }
+
+        filterBtn.addEventListener('click', handleFilter)
+
+        filterInput.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                handleFilter(products);
+            }
+        })
+    </script> -->
+    <script src="../../public/js/alertDelete.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+/* Paleta colores 
+Blaco suave: #f1efef
+Gris Oscuro: #7d7c7c
+Beige opaco: #ccc8aa
+Gris Suave: #d9d9d9
+Negro suave: #191717
+*/
+
+
+main {
+  background-color: var(--blancoClaro);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+
+:root {
+  --fontPoppins: "Poppins", sans-serif;
+  --negro: #191717;
+  --gris: #7d7c7c;
+  --letrasHeader: #ccc8aa;
+  --blancoClaro: #f1efef;
+  --grisSuave: #d9d9d9;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--fontPoppins);
+}
+
+* a {
+  color: var(--negro);
+  text-decoration: none;
+}

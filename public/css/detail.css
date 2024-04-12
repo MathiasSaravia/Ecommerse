@@ -1,0 +1,364 @@
+.carousel.pointer-event {
+  width: 50%;
+}
+
+main.product-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main.product-detail div.produc-Precio {
+  width: 90%;
+  margin-top: 30px;
+}
+
+main.product-detail div.produc-Precio div{height: 30px;
+  margin-top: 10px;
+}
+main.product-detail div.produc-Precio div a{
+  background-color: black;
+    border: solid 1px;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+main.product-detail div.produc-Precio p {
+}
+
+main.product-detail div.produc-Precio p.pago {
+}
+
+main.product-detail div.caracteristicas-product {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 95%;
+}
+
+main.product-detail div.caracteristicas-product ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+main.product-detail div.caracteristicas-product ul li {
+}
+
+main.product-detail div.Productos-similares {
+  display: flex;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+}
+
+main.product-detail div.Productos-similares section.Products-similares-1 {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  border-radius: 10px;
+  margin-left: 10px;
+  width: 40%;
+}
+
+main.product-detail
+  div.Productos-similares
+  section.Products-similares-1
+  figure {
+}
+
+main.product-detail div.Productos-similares section.Products-similares-3 {
+  display: none;
+  width: 30%;
+}
+main.product-detail div.Productos-similares section.Products-similares-4 {
+  display: none;
+}
+
+main.product-detail h5 {
+  padding: 0;
+  width: 100%;
+}
+
+main.product-detail div.Productos-similares section.Products-similares {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  border-radius: 10px;
+  width: 40%;
+}
+
+main.product-detail div.Productos-similares section.Products-similares figure {
+  display: flex;
+}
+
+main.product-detail
+  div.Productos-similares
+  section.Products-similares
+  figure
+  img {
+  display: flex;
+  width: 100%;
+}
+
+main.product-detail div.Productos-similares section.Products-similares p {
+}
+
+.carousel.pointer-event {
+  width: 100%;
+}
+
+div.card-custom {
+  display: none;
+}
+
+.carousel {
+  width: 100%;
+}
+
+
+
+@media (min-width: 426px) {
+  div.card-custom {
+    display: contents;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 40px;
+    top: 79px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    height: 276px;
+    border-radius: 10px;
+    width: 260px;
+  }
+
+  .carousel {
+    width: 50%;
+  }
+
+  .carousel-indicators .poi-custom-rounder {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+  }
+
+  main.product-detail {
+    align-items: start;
+    position: relative;
+  }
+
+  .card-body a {
+    margin: 10px;
+  }
+
+  .card-body p {
+    margin: 0;
+    padding: 10px;
+  }
+
+  main.product-detail div.produc-Precio {
+  }
+
+  main.product-detail div.produc-Precio div{
+    display: none;
+  }
+
+  main.product-detail div.produc-Precio div a{}
+
+  main.product-detail div.produc-Precio p {
+  }
+
+  main.product-detail div.produc-Precio p.pago {
+  }
+
+  main.product-detail div.caracteristicas-product {
+    /* text-align: start; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  main.product-detail div.caracteristicas-product h5 {
+  }
+
+  main.product-detail div.caracteristicas-product ul {
+  }
+
+  main.product-detail div.caracteristicas-product ul li {
+  }
+
+  main.product-detail div.Productos-similares h3 {
+    width: 100%;
+  }
+
+  main.product-detail div.Productos-similares {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  main.product-detail div.Productos-similares section.Products-similares-1 {
+    width: 30%;
+  }
+
+  main.product-detail div.Productos-similares section.Products-similares {
+    width: 30%;
+  }
+
+  main.product-detail
+    div.Productos-similares
+    section.Products-similares
+    figure {
+  }
+
+  main.product-detail
+    div.Productos-similares
+    section.Products-similares
+    figure
+    img {
+  }
+
+  main.product-detail div.Productos-similares section.Products-similares p {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  main.product-detail
+    div.Productos-similares
+    section.Products-similares-1
+    figure {
+  }
+
+  main.product-detail div.Productos-similares section.Products-similares-3 {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    border-radius: 10px;
+    width: 30%;
+  }
+  main.product-detail div.Productos-similares section.Products-similares-4 {
+    display: contents;
+    display: none;
+  }
+
+  main.product-detail div.Productos-similares section.Products-similares-1 p {
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  main.product-detail div.Productos-similares section.Products-similares-3 p {
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  main.product-detail div.Productos-similares section.Products-similares-4 p {
+    font-size: 18px;
+  }
+
+  .card-body {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .carousel.pointer-event {
+    width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  .carousel-indicators .poi-custom-rounder {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+  }
+
+  div.card-custom {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 103px;
+    top: 61px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    height: 314px;
+    border-radius: 10px;
+    width: 260px;
+  }
+
+  main.product-detail {
+  }
+
+  main.product-detail div.produc-Precio {
+    margin-left: 50px;
+    margin-top: 35px;
+    padding: 8px;
+  }
+
+  main.product-detail div.produc-Precio p {
+  }
+
+  main.product-detail div.produc-Precio p.pago {
+  }
+
+  main.product-detail div.caracteristicas-product {
+    width: 60%;
+    margin-left: 50px;
+  }
+
+  main.product-detail div.caracteristicas-product h5 {
+  }
+
+  main.product-detail div.caracteristicas-product ul {
+  }
+
+  main.product-detail div.caracteristicas-product ul li {
+  }
+
+  main.product-detail div.Productos-similares h3 {
+  }
+
+  main.product-detail div.Productos-similares section.Products-similares {
+    width: 22%;
+  }
+
+  main.product-detail
+    div.Productos-similares
+    section.Products-similares
+    figure {
+  }
+
+  main.product-detail
+    div.Productos-similares
+    section.Products-similares
+    figure
+    img {
+  }
+
+  main.product-detail div.Productos-similares section.Products-similares p {
+  }
+
+  main.product-detail div.Productos-similares section.Products-similares-4 {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    border-radius: 10px;
+    width: 22%;
+  }
+
+  main.product-detail div.Productos-similares section.Products-similares-4 p {
+    padding: 10px;
+  }
+
+  main.product-detail div.Productos-similares section.Products-similares-3 {
+    width: 22%;
+  }
+
+  main.product-detail div.Productos-similares section.Products-similares-1 {
+    width: 22%;
+  }
+  main.product-detail h2 {
+    margin-left: 20px;
+  }
+}
