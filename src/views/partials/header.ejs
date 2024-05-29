@@ -1,0 +1,65 @@
+<header class="header">
+    <div class="headerTop">
+        <div class="logo">
+            <a href="/"> <img src="/images/logo-luxuryDrinks2.webp" alt="Logo">
+            </a>
+        </div>
+
+        <div class="search">
+            <form action="/buscar" method="get" class="search-form">
+                <input class="busqueda" type="text" placeholder="Buscar Productos, marcas y más" name="keywords">
+                <button type="submit" class="lupa"> <i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        </div>
+
+        <% if (locals.userLogin) { %>
+            <div class="carrito"><a href="/carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+            </div></a>
+            <% } %>
+
+
+               
+
+                        <% if (!locals.userLogin) { %>
+                            <div class="logreg">
+                                <button class="ing" type="button"><a href="/iniciar-sesion">Ingresa</a> </button>
+                                <button class="reg" type="button"><a href="/registrarse">Registrarse</a></button>
+                            </div>
+                            <% } else { %>
+                                <button class="ing" type="button"><a
+                                        href="/actualizar-usuario/<%= locals.userLogin?.id%>">Perfil</a> </button>
+                                <button class="ing" type="button"><a href="/cerrar-sesion"><i
+                                            class="fa-solid fa-person-chalkboard"></i></a></button>
+                                <% } %>
+
+
+
+    </div>
+    <div class="headerBot">
+        <nav class="navheader">
+            <ul class="navheader-ul">
+                <li class="navli"><a href="/">INICIO</a></li>
+                <li class="navli"><a href="/lista-de-productos">PRODUCTOS</a></li>
+                <li class="navli"><a href="">CATEGORIAS</a></li>
+                
+                <% if (locals.userLogin) { %>
+                    <li class="navli"><a href="/admin/lista-de-ordenes">TUS ORDENES</a></li>
+                    <% } %>
+
+
+                <% if (locals.userLogin?.rol==="ADMIN" ) { %>
+                    <li class="navli"><a href="/admin/crear-producto">CREAR PRODUCTO</a></li>
+                    <% } %>
+
+                <% if (locals.userLogin?.rol==="ADMIN" ) { %>
+                <li class="navli"><a href="/admin/lista-de-productos">LISTA DE PRODUCTOS</a></li>
+                <% } %>
+               
+            </ul>
+        </nav>
+    </div>
+    <div class="burger-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+</header>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partials/head")%>
+
+    <body>
+
+        <%- include("../partials/header")%>
+
+            <main class="main-container mt-3 p-1"><div class="col-12">
+                            <h2 class="products-title">Resultados de la búsqueda: <%= keywords %></h2>
+                        </div>
+                <div class="glider-contain">
+                    <div class="glider">
+                        
+                        <% products.forEach(p=> { %>
+                            <div class="products">
+                                <article class="product-1">
+                                    <a href="/detalle-de-producto/<%= p.id %>">
+                                        <figure>
+                                            <img src="/images/products/<%= p.image %>" alt="">
+                                        </figure>
+                                        <div class="product-details">
+                                            <p class="price-old">
+                                                <%= toThousand(p.price) %>
+                                            </p>
+                                            <ul>
+                                                <li class="price-actual">
+                                                    <%= toThousand((p.price - (p.price * p.discount) / 100))%>
+                                                </li>
+                                                <li class="discount">
+                                                    <%= p.discount %>% OFF
+                                                </li>
+                                            </ul>
+                                            <h5>
+                                                <%= p.name %>
+                                            </h5>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            <% }) %>
+
+                            <% if (!products.length) { %>
+                                <div class="col-12">
+                                               <h2 class="products-title" style="color: tomato;">No hay productos que coincidan con esa búsqueda</h2>
+                                           </div>
+                               <% } %>
+
+                    </div>
+
+            </main>
+            <%- include("../partials/footer")%>
+
+
+
+                <!--- Glider library --->
+                <script src="/js/library/glider.min.js" defer></script>
+                <script src="/js/configs/configGlider.js" defer></script>
+    </body>
+
+</html>

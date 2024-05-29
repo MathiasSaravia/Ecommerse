@@ -21,6 +21,10 @@
 
 @import "list.css";
 
+@import "listProduct.css";
+
+
+
 * {
   font-family: "Poppins", sans-serif;
 }

@@ -1,0 +1,141 @@
+[
+   {
+      "id": 1,
+      "name": "Antonella",
+      "surname": "Dukwen",
+      "email": "antoDuk@gmail.com",
+      "password": 123456,
+      "role": "admin"
+   },
+   {
+      "id": 2,
+      "name": "Dario",
+      "surname": "Benitez",
+      "email": "reedq@gmail.comp",
+      "password": 123456,
+      "role": "regular"
+   },
+   {
+      "id": 3,
+      "name": "Lucas",
+      "surname": "Fasanella",
+      "email": "lucasF@gmail.com",
+      "password": 123456,
+      "role": "regular"
+   },
+   {
+      "id": 4,
+      "name": "Matias",
+      "surname": "Saravia",
+      "email": "matias@gmail.com",
+      "password": 123456,
+      "role": "regular"
+   },
+   {
+      "id": 5,
+      "name": "Juan",
+      "surname": "Samek",
+      "email": "juandsamek@gmail.com",
+      "password": 123456,
+      "role": "regular"
+   },
+   {
+      "id": 6,
+      "name": "",
+      "surname": "",
+      "email": "amsams@gmail.com",
+      "password": "$2a$10$4xOYPoxc3KadZ62Nur5wJ.m6p.rqZPCNKZZWONgltmT.QUjIDML86",
+      "role": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 7,
+      "name": "Supermatt",
+      "surname": "26",
+      "email": "maycolbeach@gmail.com",
+      "password": "$2a$10$EopvXn//Xs290VKuDC0y.OkATVYhhIm51cZboRXl2C97bwJgyIYve",
+      "role": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 8,
+      "name": "mathias",
+      "surname": "saravia",
+      "email": "asas@gmail.com",
+      "password": "$2a$10$7b0O0pnXFj67NElpTaT7PuZdJAlTrAWNg1i7DMa0kMFyXoo6ZgQX.",
+      "role": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 9,
+      "name": "MATHIAS",
+      "surname": "SARAVIA",
+      "email": "matiassas@gmail.com",
+      "password": "$2a$10$pG6yA72jzFakRtkkYoMwh.3gfnIJ0jY58DR/XnipWaslxlaX5QxHW",
+      "rol": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 10,
+      "name": "mathias",
+      "surname": "mathias",
+      "email": "mathiasnasi@gmail.com",
+      "password": "$2a$10$ZKuJTunWzqd80IGI3bH5ZeWXMOYh0/IO6n65XwcBJmZqjD.CHDjyW",
+      "rol": "ADMIN",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 11,
+      "name": "mathiasxd",
+      "surname": "saravia",
+      "email": "mathias26@gmail.com",
+      "password": "$2a$10$ADTd3v4AFDJv.IiKGxPLVO6kOvXCRgLmbWIXzqlgpBGjR1VyVVTDS",
+      "rol": "ADMIN",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 12,
+      "name": "xd",
+      "surname": "xd",
+      "email": "mathias26xd@gmail.com",
+      "password": "$2a$10$1EfKn0IfEDT7XJKniBiEg.lmHzHdvqDgG4SAmUXp.Snnblm32dlm.",
+      "rol": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 13,
+      "name": "Antonela",
+      "surname": "duckwen",
+      "email": "antoduckwen@gmail.com",
+      "password": "$2a$10$C//dV2GyKzvubE8Mzx.UduJMXUHLWqO501WAXLCi7FIJcmvyHPv1y",
+      "rol": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 14,
+      "name": "Antonela",
+      "surname": "duckwen",
+      "email": "anto@hotmail.com",
+      "password": "$2a$10$HSy.dVKQ3wrhTQ67jYuB2.1vKYDDLxDbtwkIY0yOfdtRVHRXWIKNC",
+      "rol": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 15,
+      "name": "Antonela",
+      "surname": "duckwen",
+      "email": "anto.l.d@hotmail.com",
+      "password": "$2a$10$qtRqpiTCdsWv./7sjGfDQ.qDCezjYanJHhWZordvfjFEWRZAoy956",
+      "rol": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 16,
+      "name": "MATHIAS",
+      "surname": "SARAVIA",
+      "email": "mathiasxdxd@gmail.com",
+      "password": "$2a$10$GvYAmEBqvrObsK.v0jMO5OnSQY3cnp4lBZvaKGZETqVIS3gpSh8bG",
+      "rol": "ADMIN",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   }
+]

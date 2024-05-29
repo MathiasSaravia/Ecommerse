@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include("../partials/head")%>
+
+<body class="ListProductAll">
+    <%- include("../partials/header")%>
+    <div class="container products-wrapper">
+
+		<div class="row">
+			<div class="col-12">
+				<h2 class="products-title">Todos los productos</h2>
+			</div>
+			<% products.forEach(p => { %>
+			 			<div class="col-12 col-sm-6 col-lg-3">
+				<section class="product-box">
+					<a href="/detalle-de-producto/<%= p.id %>">
+						<figure class="product-box_image">
+							<img src="/images/products/<%= p.imagePrincipal %>" alt="imagen de producto">
+						</figure>
+						<article class="product-box_data">
+							<h2>$<%= toThousand(p.price) %> </h2>
+							<span><%= p.discount %> % OFF</span>
+							<p><%= p.title %></p>
+                            <p><%= p.category.name %></p>
+							<i class="fas fa-truck"></i>
+						</article>
+					</a>
+				</section>
+			</div>
+			<% }) %>
+		
+
+		
+		</div>
+	</div>
+
+    <%- include("../partials/footer")%>
+
+    <%- include("../partials/scripts")%>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "vinos"
+    },
+    {
+        "id": 2,
+        "name": "espumantes"
+    },
+    {
+        "id": 3,
+        "name": "whiskys"
+    },
+    {
+        "id": 4,
+        "name": "licores"
+    },
+    {
+        "id": 5,
+        "name": "populares"
+    },
+    {
+        "id": 6,
+        "name": "otros"
+    }
+]

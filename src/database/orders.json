@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "state": "completed",
+      "total": 3000,
+      "user": "asas@gmail.com",
+      "products": [
+        {
+          "name": "Champagne Norton Extra Brut 750ml",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "state": "pending",
+      "total": 5000.00,
+      "user": "mathias26@gmail.com",
+      "products": [
+        {
+          "name": "Anana Fizz Real",
+          "quantity": 1
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="/public/images/copaIcon.png">
+</head>
+
+<body>
+
+  <%- include("../partials/header")%>
+
+<main>
+<h1 class="text-center text-danger mb-4 pt-4">Listado de ordenes</h1>
+
+
+<table class="table table-list-products mb-4">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Avatar</th>
+            <th scope="col">Total</th>
+            <th scope="col">Nombre y Apellido</th>
+            <th scope="col">Producto</th>
+            
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <body>
+        <% orders.forEach(o => { %>
+            <tr>
+                <th scope="row">
+                    <%= o.id %>
+                </th>
+                <td>
+                    <%= o.state == "pending" ? "PENDIENTE" : o.state == "completed" ? "COMPLETO" : "CANCELADO" %>
+                </td>
+                <td>
+                    <%= o.total %>
+                </td>
+                <td>
+                    <%= o.user.name + " " + o.user.surname %>
+                </td>
+                <td>
+                    <ol>
+                        <% o.products.forEach(p=> { %>
+                            <li>
+                                 <%= p.title %>
+                            </li>
+                            <% }) %>
+                    </ol>
+                </td>
+
+                <td>
+                    <div class="btn-group" role="group">
+                        <a href="#" class="btn btn-warning d-inline-block">Agregar</a>
+                        <a href="#" class="btn btn-danger btn-danger-custom d-inline-block">Eliminar</a>
+                    </div>
+                </td>
+
+            </tr>
+
+            <% }) %>
+    </table>
+            
+    </body>
+        
+        <%- include("../partials/footer")%>
+        </main>
+        <script src="../../public/js/alertDelete.js"></script>
+    
+

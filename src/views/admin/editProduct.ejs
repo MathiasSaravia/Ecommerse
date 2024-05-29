@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include("../partials/head")%>
+
+<body>
+
+  <main>
+
+    <%- include("../partials/header")%>
+
+      <div class="dashboard-admin-content d-flex flex-column align-items-center">
+        <h1 class="text-Dark my-4 d-flex">Editar Producto</h1>
+        <a href="/" class="btn btn-dark mb-2 col-3 d-flex justify-content-center">Volver al listado</a>
+      </div>
+
+      <div class="card  container mb-4" style="width: 40rem;">
+
+        <form action="/admin/editar-producto/<%= product.id%>?_method=PUT" method="post" class="row" enctype="multipart/form-data">
+          <div class=" col-12">
+            <label for="text" class="form-label"></label>
+            <input type="text" class="form-control" placeholder="Titulo" name="title" value="<%= product.title %>">
+          </div>
+
+          <div class="mb-3 col-6">
+            <label for="precio" class="form-label"></label>
+            <input type="number" class="form-control" id="precio" placeholder="Precio" name="price" value="<%= product.price %>">
+          </div>
+
+          <div class="mb-3 col-6">
+            <label for="Descuento" class="form-label"></label>
+            <input type="number" class="form-control" id="Descuento" name="discount" placeholder="Descuento"
+              value="<%= product.discount %>">
+          </div>
+
+          <div class="mb-3 form-floating col-6 p-1">
+            <select class="form-select" id="floatingSelect" name="category" aria-label="Selecciona Categoria">
+              <option hidden value="">Selecciona Categoría</option>
+              <% category.forEach((c) => { %>
+              <option <%= 
+              locals.old?.category && +locals.old?.category === c.id ? 'selected' : 
+              c.id === product.categoryId? 
+              'selected' : null%>
+              value="<%= c.id %>"><%= c.name %></option>
+              <% }) %>
+            </select>
+            <label for="floatingSelect">Desplegar las opciones</label>
+          </div>
+
+          <div class="mb-2  p-1 form-floating col-6">
+            <textarea class="form-control" placeholder="Leave a comment here" name="description"
+              id="floatingTextarea"><%= product.description %></textarea>
+            <label for="floatingTextarea">Descripción</label>
+          </div>
+
+          <div class="mb-3 col-12">
+            <label for="formFileMultiple" class="form-label">Agregar o modificar imagenes</label>
+            <input class="form-control" name="img" type="file" id="formFileMultiple" multiple>
+          </div>
+
+          <div class="mb-2  form-check form-switch col-3 ">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="available">Disponible</label>
+          </div>
+
+          <button type="submit" class="btn btn-dark col-4 mb-3 mt-3 mx-2">Guardar</button>
+          <a href="/" class="btn btn-danger col-4 mb-3 mt-3">Cancelar</a>
+        </form>
+      </div>
+
+      <%- include("../partials/footer")%>
+
+  </main>
+
+  <%- include("../partials/scripts")%>
+
+</body>
+
+</html>

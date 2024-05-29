@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include("../partials/head")%>
+
+<body class="register-body">
+    <%- include("../partials/header")%>
+
+    <main class="registrarse">
+        <% if (user) { %>
+        <form action="/actualizar-usuario/<%= user.id %>?_method=PUT" method="post">
+
+            <h1>Actualizar su perfil</h1>
+
+            <p class="p4">Completá los siguientes datos para actualizar su usuario</p>
+
+            <div class="nomape">
+
+                <input type="name" name="name" id="name" value="<%= user.name %>">
+                <% if(locals.errors){ %>
+                <%= errors?.email?.msg %>
+                <% } %>  
+                <input type="name" name="lastname" id="apellido" value="<%= user.lastname %>" placeholder="apellido">
+                <% if(locals.errors){ %>
+                <%= errors?.lastname?.msg %>
+                <% } %>     
+            </div>
+
+            <div class="email">
+                <input type="email" name="email" value="<%= user.email %>" placeholder="e-mail">
+                <% if(locals.errors){ %>
+                <%= errors?.email?.msg %>
+                <% } %>  
+            </div>
+
+            <div class="data">
+
+                <div class="contrep">
+                    <input class="contr" type="password" name="password" placeholder="Nueva contraseña">
+
+                    <input class="repc" type="password" placeholder="Confirmar contraseña">
+                    <% if(locals.errors){ %>
+                    <%= errors?.password?.msg %>
+                    <% } %>  
+                </div>
+
+                <div class="normas">
+                    <ul>
+                        <li> <i class="fa-solid fa-circle-xmark"></i>
+                            <p>8 a 15 caracteres</p>
+                        </li>
+
+                        <li> <i class="fa-solid fa-circle-xmark"></i>
+                            <p>Al menos una mayúscula</p>
+                        </li>
+
+                        <li> <i class="fa-solid fa-circle-xmark"></i>
+                            <p>Al menos un número</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit">Actualizar</button>
+            </div>
+            <div class="button">
+                <button type="submit"><a href="/">Cancelar</a></button>
+            </div>
+        </form>
+        <% } else { %>
+            <p>Usuario no encontrado</p>
+        <% } %>
+    </main>
+
+    <script src="../../public/js/alertDelete.js"></script>
+    <%- include("../partials/footer")%>
+    
+</body>
+
+</html>

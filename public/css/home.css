@@ -242,7 +242,7 @@
 
     .main-container .products article {
         width: 60%;
-        height: 35vh;
+        height: 50vh;
     }
 }
 @media (max-width: 767px) {
