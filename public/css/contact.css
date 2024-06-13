@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body.contact {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(img/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+body.contact .container {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 1000px;
+}
+
+body.contact .box-info {
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+body.contact.box-info > h1 {
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+body.contact .data {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+
+body.contact .data > p {
+    font-size: 1rem;
+}
+
+body.contact .data > p > i {
+    color:#191717;
+    margin-right: 10px;
+    font-size:25px;
+}
+
+
+
+body.contact .links {
+    display:flex;
+    gap:15px;
+}
+
+body.contact .links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: #191717;
+    text-align: center;
+    transition: .1s;
+}
+
+body.contact .links > a > i {
+    color:#fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+body.contact form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+}
+
+body.contact .input-box {
+    position:relative;
+}
+
+body.contact .input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+    
+}
+
+body.contact .input-box > input::placeholder,
+body.contact .input-box > textarea::placeholder {
+    color:#a3a3a3;
+    
+}
+
+body.contact .input-box > input:focus::placeholder,
+body.contact .input-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+body.contact .input-box > input:focus,
+body.contact .input-box > textarea:focus {
+    border-bottom:3px solid#191717;
+    animation: shake .2s;
+}
+
+body.contact .input-box > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:#fff;
+    letter-spacing: 1.5px;
+}
+
+
+body.contact .input-box > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+body.contact .input-box > input:focus ~ i {
+    color:#191717;
+}
+
+body.contact form > button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: #191717;
+    color:#fff;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+body.contact form > button:hover,
+body.contact .links > a:hover {
+    background: #ccc8aa;
+}
+
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+ }
+
+
+@media screen and (max-width:600px) {
+    body.contact  .container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    body.contact .box-info {
+        gap:15px;
+    }
+
+    body.contact .box-info > h1 {
+        font-size: 1.5rem;
+    }
+}

@@ -8,7 +8,7 @@
         <div class="search">
             <form action="/buscar" method="get" class="search-form">
                 <input class="busqueda" type="text" placeholder="Buscar Productos, marcas y más" name="keywords">
-                <button type="submit" class="lupa"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                <button type="submit" class="search-form-btn"> <i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
         </div>
 
@@ -41,7 +41,7 @@
             <ul class="navheader-ul">
                 <li class="navli"><a href="/">INICIO</a></li>
                 <li class="navli"><a href="/lista-de-productos">PRODUCTOS</a></li>
-                <li class="navli"><a href="">CATEGORIAS</a></li>
+                <li class="navli"><a href="/contacto">CONTACTO</a></li>
                 
                 <% if (locals.userLogin) { %>
                     <li class="navli"><a href="/admin/lista-de-ordenes">TUS ORDENES</a></li>

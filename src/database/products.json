@@ -457,23 +457,5 @@
       "discount": 30,
       "category": "populares",
       "image": "Meet_HardSeltzer_Aromas_Naturales_310ml.png"
-   },
-   {
-      "id": 53,
-      "name": "Mingo Pomelo 750ml",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "price": 9000,
-      "discount": 10,
-      "category": "populares",
-      "image": "mingo_pomelo_750ml.png"
-   },
-   {
-      "id": 54,
-      "name": "Dr Lemon Vodka Pomelo XL",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "price": 4200,
-      "discount": 15,
-      "category": "populares",
-      "image": "Dr-Lemon-con-Vodka-Pomelo.png"
    }
 ]

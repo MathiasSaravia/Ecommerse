@@ -1,6 +1,11 @@
-const db = require("../../database/models")
+const db = require("../../database/models");
+const { validationResult } = require("express-validator");
 
-module.exports = (req, res) => {       
+module.exports = (req, res) => { 
+   const errors = validationResult(req)
+   if(errors.isEmpty()) {
+      
+   
    const {title,price,discount,description,category} = req.body;
    const image = req.file
 
@@ -16,4 +21,18 @@ module.exports = (req, res) => {
    .then(() => {
       res.redirect("/admin/lista-de-productos")
    })
+ } else {
+   const old = req.body
+   const errorsMapped = errors.mapped();
+   db.category.findAll()
+   .then(category => {
+
+     res.render(
+       "admin/createProduct",
+       { category, errors: errorsMapped, old: req.body }
+       
+     );
+
+   })
+ }
 }

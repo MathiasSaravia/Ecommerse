@@ -8,7 +8,7 @@ const {updateValidation} = require("../middlewares/validations/updateUser.valida
 
 
 router.get("/iniciar-sesion", authController.login);
-router.post("/iniciar-sesion",authController.loginProcess);
+router.post("/iniciar-sesion",LoginValidation,authController.loginProcess);
 
 router.get("/registrarse", authController.register);
 router.post("/registrarse", registerValidation ,authController.registerProcess);

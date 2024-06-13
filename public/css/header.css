@@ -92,15 +92,16 @@
     background-color: var(--blancoClaro);
   }
 
-  .lupa {
+  button.search-form-btn {
     position: absolute;
-    font-size: 14px;
+    font-size: 12px;
     background-color: var(--blancoClaro);
-    padding: 12px;
+    padding: 10px;
     display: inline;
-    right: 8px;
-    top: 2px;
-    border-radius: 9px;
+    right: 14px;
+    top: 3px;
+    border-radius: 10px;
+    border: solid 1px white;
   }
 
   .carrito {

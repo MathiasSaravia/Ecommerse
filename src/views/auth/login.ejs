@@ -16,20 +16,24 @@
                         <label class="login-email1" for="email">Email:</label>
                         <input class="login-email2" type="text" name="email" value="" placeholder="email">
                     </div>
-                <p class="text-danger fs-6"> <%= locals.errors?.email?.msg %></p>
+                <p class="text-danger fs-6 err-email"><%= locals.errorsLog?.email?.msg %></p>
+                
 
                 <div class="login-contraseña">
                     <label class="login-contraseña1" for="password">contraseña:</label>
-                    <input class="login-contraseña2" type="password" name="password" value="" placeholder="contraseña">
-                    <p class="text-danger fs-6"><%= locals.errors?.password?.msg %></p>
+                    <input class="login-contraseña2" type="password" name="password" value="" placeholder="contraseña" id="password">
+                    <span class="eye" id="btn-eye">
+                        <i class="fa-solid fa-eye p-2 fs-4" id="icon-eye"></i>
+                        <!-- <i class="fa-solid fa-eye-slash"></i> -->
+                      </span>
+                    <p class="text-danger fs-6"><%= locals.errorsLog?.password?.msg %> %></p>
+                    <p class="text-danger fs-6 err-password"></p>
                 </div>
 
                 <button class="login-ingresar" type="submit">Ingresar</a></button>
 
-                <p id="login-cuenta">No tienes una cuenta?  <a href="/register"> Registrarse</a> </p>
+                <p id="login-cuenta">No tienes una cuenta?  <a href="/registrarse"> Registrarse</a> </p>
             
-
-
             </form>
 
 
@@ -38,5 +42,5 @@
             <%- include("../partials/footer")%>
 
     </body>
-
+    <script src="./js/functions/loginValidation.js"> </script>
 </html>

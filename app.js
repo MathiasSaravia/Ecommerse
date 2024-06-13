@@ -11,7 +11,7 @@ const cookieParse = require("cookie-parser")
 
 /* CONFIGS */
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "../grupo_7_luxury-drinks/src/views"));
+app.set("views", path.join(__dirname, "../ecconmerse/src/views"));
 
 
 /* MIDDLEWARE */
@@ -19,7 +19,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride("_method"))
-app.use(session({secret: "msj"}));
+/* app.use(session({secret: "msj"})); */
 app.use(cookieParse())
 app.use(session({secret:"PALABRA SECRETA", saveUninitialized: true, resave: true}))
 app.use(createSessionFromCookies)

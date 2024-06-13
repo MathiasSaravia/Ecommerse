@@ -1,7 +1,13 @@
-const { loadData } = require("../../database")
-
-
+const db = require("../../database/models")
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 module.exports = (req, res)=>{
-    const products = loadData();
-    res.render("admin/listProducts", {products})
+    db.product.findAll({
+        include: [{
+            association:"category",
+            attributes: ["id", "name"]
+        }]
+    }).then((products) => {
+        res.render("admin/listProducts",
+        {products,toThousand}) 
+    })      
 }

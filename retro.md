@@ -39,3 +39,39 @@ Lo que el grupo tendria que hacer menos, es que se guarden los problemas hasta e
 
 Dejar de hacer:
 Lo que notamos este anterior sprint es que todo el grupo dejo las cosas que tenia que hacer para el ultimo momento.
+
+sprint 5: 
+
+Hacer mas:
+Empezar a hacer dailys.
+Coordinar los tiempos para las reuniones.
+
+Hacer menos:
+Lo que el grupo tendria que hacer menos, es que se guarden los problemas hasta el ultimo dia , asi mismo no pidiendo ayuda toda la semana.
+
+Continuar haciendo:
+Lo que tenemos que seguir haciendo es seguir con la comunicacion al menos una vez al dia para saber como vamos
+
+sprint 6: 
+
+Empezar a hacer dailys.
+Coordinar los tiempos para las reuniones.
+
+Hacer menos:
+Lo que el grupo tendria que hacer menos, es que se guarden los problemas hasta el ultimo dia , asi mismo no pidiendo ayuda toda la semana.
+
+Continuar haciendo:
+Lo que tenemos que seguir haciendo es seguir con la comunicacion al menos una vez al dia para saber como vamos , y seguir trabajando en equipo
+
+sprint 7: 
+
+Empezar a hacer dailys.
+Coordinar los tiempos para las reuniones.
+
+Hacer menos:
+Lo que el grupo tendria que hacer menos, es que se guarden los problemas hasta el ultimo dia , asi mismo no pidiendo ayuda toda la semana.
+
+Continuar haciendo:
+Lo que tenemos que seguir haciendo es seguir con la comunicacion al menos una vez al dia para saber como vamos , y seguir trabajando en equipo
+
+sprint 8: 

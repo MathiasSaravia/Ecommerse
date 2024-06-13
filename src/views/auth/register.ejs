@@ -7,11 +7,11 @@
     <%- include("../partials/header")%>
 
     <main class="registrarse">
-        <form  method="post" action="/registrarse">
+        <form id="form-register" method="post" action="/registrarse">
 
             <h1>Registrarse</h1>
 
-            <p class="p4">Completá los siguientes datos para registrarte como usuario</p>
+            <p class="p4" id="error-general">Completá los siguientes datos para registrarte como usuario</p>
 
             <div class="nomape">
 
@@ -25,13 +25,13 @@
                 <input type="text" name="email" value="" placeholder="e-mail"> 
             </div>
 
-             <p class="text-danger fs-6"> <%= locals.errors?.email?.msg %></p>
+             <p class="text-danger fs-6 err-email"> <%= locals.errors?.email?.msg %></p>
 
             <div class="data">
 
                 <div class="contrep">
                     <input class="contr" type="password" name="password" value="" placeholder="contraseña">
-                    <p class="text-danger fs-6"><%= locals.errors?.password?.msg %></p>
+                    <p class="text-danger fs-6 err-password"><%= locals.errors?.password?.msg %></p>
    
 
                 </div>
@@ -68,5 +68,7 @@
     <%- include("../partials/footer")%>
     
 </body>
+
+<script src="./js/functions/registerValidation.js"> </script>
 
 </html>

@@ -22,15 +22,15 @@
           </div>
           <div class="carousel-inner" style="height: 250px;">
             <div class="carousel-item active h-100">
-              <img src="/images/products/<%= product.image %>" class="d-block w-100 h-100" alt="..."
+              <img src="/images/products/<%= product.imagePrincipal %>" class="d-block w-100 h-100" alt="..."
                 style="object-fit: contain;">
             </div>
             <div class="carousel-item h-100">
-              <img src="/images/products/<%= product.image %>" class="d-block w-100 h-100" alt="..."
+              <img src="/images/products/<%= product.imagePrincipal %>" class="d-block w-100 h-100" alt="..."
                 style="object-fit: contain;">
             </div>
             <div class="carousel-item h-100">
-              <img src="/images/products/<%= product.image %>" class="d-block w-100 h-100" alt="..."
+              <img src="/images/products/<%= product.imagePrincipal %>" class="d-block w-100 h-100" alt="..."
                 style="object-fit: contain;">
             </div>
           </div>
@@ -57,10 +57,10 @@
 
         <div class="produc-Precio ">
           <p class="m-0">
-            <%= product.price %>
+            <%= toThousand (product.price) %>$
           </p>
           <p class="m-0">Con <%= product.discount %>% queda en: <%= toThousand((product.price - (product.price *
-                product.discount) / 100))%>
+                product.discount) / 100))%>$
           </p>
           <p class="m-0">ver los medios de pago</p>
           <div><a href="/Carrito">Agregar a carrito</a></div>
@@ -85,7 +85,7 @@
 
         </div>
 
-        <h3>Productos similares</h3>
+        <h3 class="m-4">Productos similares</h3>
         <div class="Productos-similares" style="height: 192px;">
 
           <section class="Products-similares-1 ">

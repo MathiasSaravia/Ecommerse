@@ -1,45 +1,42 @@
-const { compareSync } = require("bcryptjs");
-const { validationResult } = require("express-validator");
-const { loadData } = require("../../database");
+const db = require('../../database/models');
+const { validationResult } = require("express-validator")
 
-module.exports = (req, res) => {
-const errors = validationResult(req)
+module.exports = async (req, res) => {
+   try {
+      const errors = validationResult(req)
 
-    
-const {email , password , remember} = req.body;  
-const users = loadData("users");  
+      if (errors.isEmpty()) {
+         const { remember } = req.body;
+         const userFind = await db.user.findOne({
+            where: { email: req.body.email.toLowerCase() },
+            attributes: {
+               exclude: ['password']
+            },
+         })
+   
+         const { id, name, email, rol, avatar } = userFind;
+         
+   
+         req.session.userLogin = {
+            id,
+            name,
+            email,
+            rol,
+            avatar
+         };
+   
+         if (remember) res.cookie("userLogin", req.session.userLogin, { maxAge: (60000 * 10 ) * 6})
+   
+         return res.redirect("/");
+      }
+      else {
+         throw errors
+      }
 
-if(!email){
-   return res.send("debe mandar un email")
-}
-const userFind = users.find(u => u.email === email.toLowerCase());
-
-if(!userFind){
-    return res.send("el usuario no existe")
-}
-
-const isValidPass = compareSync(password, userFind.password)
-
-if(!isValidPass){
-    return res.send("Contraseña invalida")
-}
-
-const {name,surname,rol,avatar,id} = userFind
-req.session.userLogin = {
-id,
-name,
-surname,
-email,
-rol,
-avatar,
+   } catch (errors) {
+      res.render("./auth/login", {
+         old: req.body,
+         errorsLog: errors.mapped()
+      });
+   }
 };
-
-if(remember){
-res.cookie("userLogin",req.session.userLogin,{maxAage:5000})
-}
-
-res.redirect("/")
-}
-
-
-

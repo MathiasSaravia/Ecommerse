@@ -3,6 +3,7 @@ const { listApi, createApi, updateApi, deleteApi, renderingApi } = require("../.
 const {uploadProducts} = require("../../middlewares/uploadFile")
 
 
+/* /api/product */
 router.get("/", listApi) 
 router.post("/" , uploadProducts.single("image"), createApi)
 router.put("/:id", uploadProducts.single("image"), updateApi)

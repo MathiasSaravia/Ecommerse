@@ -19,17 +19,20 @@
     <form action="/admin/crear-producto" method="post" enctype="multipart/form-data" class="row">
       <div class=" col-12">
         <label for="text" class="form-label"></label>
-        <input type="text" class="form-control" name="title" placeholder="Titulo" value="" >
+        <input type="text" class="form-control" name="title" placeholder="Titulo" value="" id="title">
+        <p class="text-danger fs-6 error-title"> <%= locals.errors?.title?.msg %></p>
       </div>
 
       <div class="mb-3 col-6">
         <label for="precio" class="form-label"></label>
-        <input type="number" class="form-control" id="" name="price" placeholder="Precio" value="" >
+        <input type="number" class="form-control" id="" name="price" placeholder="Precio" value="" id="price"/>
+        <p class="text-danger fs-6 error-price"><%= locals.errors?.price?.msg %></p>
       </div>
 
       <div class="mb-3 col-6">
         <label for="Descuento" class="form-label"></label>
-        <input type="number" class="form-control" id="" name="discount" placeholder="Descuento" value="" > 
+        <input type="number" class="form-control" id="" name="discount" placeholder="Descuento" value="" >
+        <p class="text-danger fs-6 error-discount"><%= locals.errors?.discount?.msg %></p> 
       </div>
 
       <div class="mb-3 form-floating col-6 p-1">
@@ -47,11 +50,13 @@
       <div class="mb-2  p-1 form-floating col-6">
         <textarea class="form-control" placeholder="Leave a comment here" name="description" id="floatingTextarea" value="" ></textarea>
         <label for="floatingTextarea">Descripción</label>
+        <p class="text-danger fs-6 error-description"><%= locals.errors?.description?.msg %></p>
       </div>
 
       <div class="mb-3 col-12">
         <label for="formFileMultiple" class="form-label">Agregar o modificar imagenes</label>
-        <input class="form-control" type="file" name="image" id="formFileMultiple" multiple>
+        <input class="form-control" type="file" name="img" id="formFileMultiple" multiple>
+        <p class="text-danger fs-6 error-image"><%= locals.errors?.imagePrincipal?.msg %></p>
       </div>
 
       <div class="mb-2  form-check form-switch col-3 ">
@@ -68,7 +73,10 @@
 
 </main>
 
-<%- include("../partials/scripts")%>
+
+
 
 </body>
+
+<script src="./js/functions/createProduct.js"> </script>
 </html>
