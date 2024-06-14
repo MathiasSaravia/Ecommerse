@@ -23,7 +23,8 @@ const Products = () => {
 const dataTableHead = ["Titulo","Duracion","Rating","Genero","Premios"]
 
   return (
-    <table className="table">
+    <div className="table-responsive">
+    <table className="table table-bordered" id="dataTable" width="100%" cellspacing="0">
     <TableHead items={dataTableHead}/>
 
        <tbody>
@@ -33,9 +34,8 @@ const dataTableHead = ["Titulo","Duracion","Rating","Genero","Premios"]
         }
         
        </tbody>
-
-       
-    </table>
+     </table>
+    </div>
   )
 }
 

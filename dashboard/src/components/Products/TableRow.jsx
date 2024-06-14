@@ -2,7 +2,7 @@ import React from 'react'
 
 export const TableRow = ({title,duracion,rating,genre,award}) => {
   return (
-    <tbody>
+    
                 <tr>
                     <td>{title}</td>
                     <td>{duracion}</td>
@@ -12,6 +12,6 @@ export const TableRow = ({title,duracion,rating,genre,award}) => {
                     </td>
                     <td>{award}</td>
                 </tr>
-            </tbody>
+            
   )
 }
