@@ -11,7 +11,7 @@ const cookieParse = require("cookie-parser")
 
 /* CONFIGS */
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "../ecconmerse/src/views"));
+app.set("views", path.join(__dirname, "../ecommerse/src/views"));
 
 
 /* MIDDLEWARE */
