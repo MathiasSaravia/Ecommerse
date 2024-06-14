@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Orders = props => {
+export const Orders = props => {
   return (
     <div>Orders</div>
   )

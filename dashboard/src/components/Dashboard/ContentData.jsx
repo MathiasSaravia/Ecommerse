@@ -29,9 +29,9 @@ ContentData.prototype = {
     icon:PropTypes.string
 }
 
-ContentData.defaultProps={
+/* ContentData.defaultProps={
     tittle:"titulo no definido",
     color:"sucess",
     number:0,
     icon:"question"
-}
+} */

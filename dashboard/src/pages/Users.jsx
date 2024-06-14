@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Users = props => {
+export const Users = props => {
   return (
     <div>Users</div>
   )

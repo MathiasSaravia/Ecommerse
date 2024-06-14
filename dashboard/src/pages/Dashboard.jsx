@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Contentrowtop } from '../components/Dashboard/Contentrowtop'
 
-const Dashboard = props => {
+export const Dashboard = props => {
   return (
-    <div>index</div>
+    <Contentrowtop />
   )
 }
 
-Index.propTypes = {}
+Dashboard.propTypes = {}
 
 export default Dashboard
