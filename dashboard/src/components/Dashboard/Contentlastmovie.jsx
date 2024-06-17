@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import mandolorian from '../../assets/images/mandalorian.jpg'
+import { ModalP } from '../Reusable/ModalP';
 
 export const Contentlastmovie = () => {
 
   const [lastMovie,setLastMovie] = useState([]);
   const [error, setError] = useState("");
+  const [showModal, setShowModal] = useState(false);
+  const handleCloseModal = () => {
+    setShowModal(false);
+  }
 
   useEffect(() => {
     const getLastMovie = async () => {
@@ -19,7 +23,7 @@ export const Contentlastmovie = () => {
     };
     getLastMovie();
   }, [])
-
+  
   return (
     <div className="col-lg-6 mb-4">
     <div className="card shadow mb-4">
@@ -31,7 +35,8 @@ export const Contentlastmovie = () => {
           <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: "40rem", height: "25rem" , objectFit: "contain"}} src={`http://localhost:3050/api/product/${lastMovie.imagePrincipal}`}  alt=" Star Wars - Mandalorian " />
         </figure>
         <p>{lastMovie.description}</p>
-        <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver detalle</a>
+        <button className="btn btn-danger"  rel="nofollow" onClick={() => setShowModal(true)}>Ver mas</button>
+        <ModalP active={showModal} onClose={handleCloseModal}/>
       </div>
     </div>
   </div>
