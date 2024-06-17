@@ -7,6 +7,7 @@ const session = require("express-session")
 const createSessionFromCookies = require("./src/middlewares/createSessionFromCookies")
 const insertDataLocal = require('./src/middlewares/insertDataLocal');
 const cookieParse = require("cookie-parser")
+const cors = require("cors")
 
 
 /* CONFIGS */
@@ -15,6 +16,7 @@ app.set("views", path.join(__dirname, "../ecommerse/src/views"));
 
 
 /* MIDDLEWARE */
+app.use(cors())
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

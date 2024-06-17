@@ -25,11 +25,6 @@ const router = createBrowserRouter([{
         path:"/orders",
         element:<Orders/>
         }
-        ,
-        {
-        path:"/generos",
-        element:<Genres/>
-        }
 ]
 }])
 
