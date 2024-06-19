@@ -23,18 +23,19 @@ const Products = () => {
 
   useEffect(() => {
     const dataProduct = Object.entries(products.length ? products[0] : {});
-    const listWrite = ["id","title","price","discount","description"]
+    const listWrite = ["id","title","price","discount","description"];
+    const headerNameTable = {id: "ID", title: "TITULO", price: "PRECIO",discount:"DESCUENTO" ,description: "DESCRIPCIÓN"}
     const columsFormat = dataProduct
     .filter(([key,value]) => listWrite.includes(key))
     .map(([key, value]) => {
       return {
         field: key,
-        headerName: "",
+        headerName: headerNameTable[key],
         with: 150,
         /* type: typeof value, */
       }
     })
-
+    
     const rowsFormat = [];
     products.forEach((product) => {
       const objData = {};
@@ -43,47 +44,22 @@ const Products = () => {
           objData[key] = value;
         }
       });
-      rowsFormat.push(rowsFormat);
+      rowsFormat.push(objData);
     });
-    console.log(rowsFormat)
+
     setDataGrid({
-      columns: columsFormat
+      columns: columsFormat,
+      rows: rowsFormat,
     })
 
   },[products])
 
-  const columsProducts = [
-  {
-    field: "id",
-    headerName: "ID",
-    with: 150,
-    type: "number",
-  },
-  { 
-  field: "title",
-  headerName: "Titulo",
-  with: 150,
-  type: "string",
-  }
-]
-  
-
-  const rowsProduct = [
-    {
-      id:1,
-      title:"product 1",
-      price:1000,
-      discount:10,
-      description:"description",
-      
-    }
-  ]
   return (
     
     <div style={{ height: 400, width: '100%' }}>
       <h1>TODOS LOS PRODUCTOS</h1>
         <DataGrid
-          rows={rowsProduct}
+          rows={dataGrid.rows}
           columns={dataGrid.columns}
           initialState={{
             pagination: {
