@@ -6,7 +6,7 @@ module.exports = (req, res) => {
     const { page } = req.query
     db.product.paginate({
         page: +page,
-        paginate: 10,
+        paginate: 50,
         include: ["category"],
         attributes: {
             include: [[literal(`CONCAT('${originServer()}/api/product/',imagePrincipal)`), "imagePrincipal"]]

@@ -1,10 +1,10 @@
 import React from 'react'
-import logo from '../../assets/images/logo-DH.png'
+import logo from '../../assets/images/Logo-footer.png'
 import { Link } from 'react-router-dom'
 
 export  function Sidebar() {
   return (
-<ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul className="navbar-nav sidebar sidebar-dark accordion" style={{backgroundColor: '#191717'}} id="accordionSidebar">
  {/* <!-- Sidebar --> */}
 {/*  <!-- Sidebar - Brand --> */}
  <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
@@ -20,14 +20,14 @@ export  function Sidebar() {
  <li className="nav-item active">
    <Link className="nav-link" to="/">
      <i className="fas fa-fw fa-tachometer-alt"></i>
-     <span>Dashboard - DH movies</span></Link>
+     <span>Luxury Drinks</span></Link>
  </li>
 
 {/*  <!-- Divider --> */}
  <hr className="sidebar-divider" />
 
  {/* <!-- Heading --> */}
- <div className="sidebar-heading">Actions</div>
+ <div className="sidebar-heading">ACCIONES</div>
 
  {/* <!-- Nav Item - Pages --> */}
  <li className="nav-item">

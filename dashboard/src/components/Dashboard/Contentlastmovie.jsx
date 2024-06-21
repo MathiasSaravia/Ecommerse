@@ -34,8 +34,8 @@ export const Contentlastmovie = () => {
         <figure className="text-center">
           <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: "40rem", height: "25rem" , objectFit: "contain"}} src={`http://localhost:3050/api/product/${lastMovie.imagePrincipal}`}  alt=" Star Wars - Mandalorian " />
         </figure>
-        <p>{lastMovie.description}</p>
-        <button className="btn btn-danger"  rel="nofollow" onClick={() => setShowModal(true)}>Ver mas</button>
+        <p style={{color:"#191717"}}>{lastMovie.description}</p>
+        <button className="btn btn-dark"  rel="nofollow" onClick={() => setShowModal(true)}>Ver mas</button>
         <ModalP active={showModal} onClose={handleCloseModal}/>
       </div>
     </div>

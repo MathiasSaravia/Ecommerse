@@ -24,12 +24,12 @@ export const ModalP = ({active = false ,onClose}) => {
     <div className="modal-dialog">
       <div className="modal-content">
         <div className="modal-header">
-        <h1 className="modal-title fs-3" id="exampleModalLabel">{lastMovie.title}</h1>
+        <h1 className="modal-title fs-3" id="exampleModalLabel" style={{color:"#191717"}}>{lastMovie.title}</h1>
         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick={onClose}></button>
         </div>
         <div className="modal-body">
-        <h5>PRECIO: {lastMovie.price}$</h5>
-        <h5>DESCUENTO: {lastMovie.discount}%</h5>
+        <h5 style={{color:"#191717"}}>PRECIO: {lastMovie.price}$</h5>
+        <h5 style={{color:"#191717"}}>DESCUENTO: {lastMovie.discount}%</h5>
         </div>
         <div className="modal-footer">
           <button type="button" className="btn btn-secondary" data-bs-dismiss="modal" onClick={onClose}>Cerrar</button>

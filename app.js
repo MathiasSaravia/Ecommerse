@@ -12,7 +12,7 @@ const cors = require("cors")
 
 /* CONFIGS */
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "../ecommerse/src/views"));
+app.set("views", path.join(__dirname, "../grupo_7_luxury-drinks/src/views"));
 
 
 /* MIDDLEWARE */

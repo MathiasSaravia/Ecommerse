@@ -35,6 +35,7 @@ const Products = () => {
         /* type: typeof value, */
       }
     })
+    console.log(dataProduct)
     
     const rowsFormat = [];
     products.forEach((product) => {
@@ -57,7 +58,7 @@ const Products = () => {
   return (
     
     <div style={{ height: 400, width: '100%' }}>
-      <h1>TODOS LOS PRODUCTOS</h1>
+      <h1 style={{color: '#191717'}}>TODOS LOS PRODUCTOS</h1>
         <DataGrid
           rows={dataGrid.rows}
           columns={dataGrid.columns}
