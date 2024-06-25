@@ -1,128 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include("../partials/head")%>
+<%- include('../partials/head') %>
+  <style>
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
 
-<body class="cart-body">
-    <%- include("../partials/header")%>
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
 
-    <main class="cart-main">
-        <section class="cart">
-            <h1 class="cart-title">Mi Carrito de Compras (4)</h1>
-            <article class="cart-product">
-                <img class="cart-product-img" src="/images/anana_fizz_real.png" alt="">
-                <h5 class="cart-product-title col-4 d-flex align-items-center">Anana Fizz Real</h5>
-                <div class="product-buttons">
-                    <div class="product-quantity">
-                        <button class=" cart-product-plus"><i class="bi bi-plus-lg"></i></button>
-                        <p class="cart-product-quantity">2</p>
-                        <button class="cart-product-minus"><i class="bi bi-dash"></i></button>
-                    </div>
-                    <button class="cart-product-trash"><i class="bi bi-trash-fill"></i></i></button>
+    .btn-clear {
+      transition: background-color 200ms, color 200ms;
+    }
+
+    .btn-clear:hover {
+      background-color: rgb(240, 184, 184);
+      color: white;
+    }
+  </style>
+
+  <body class="cart-body" style="margin: 0;">
+    <!-- encabezado -->
+    <%- include('../partials/header') %>
+
+      <!-- principal -->
+      <main class="container">
+
+        <div class="row position-relative my-5">
+
+          <div id="card-container" class="col-8">
+
+            <!-- ... CARDS ... -->
+
+            <!-- COURSE TEMPLATE CARD -->
+            <div class="card col-12 col-lg-10 my-5">
+                <div class="card-body row">
+                  
+                  <img class="col-4" style="object-fit: contain;" src="https://wpdirecto.com/wp-content/uploads/2017/08/alt-de-una-imagen.png" alt="">
+                  <div class="col-8 position-relative">
+                    <button class="fs-5 p-0 border-0 bg-transparent position-absolute text-danger " style="top:-3px;right:10px"><i style="padding:2px" class="rounded-circle btn-clear far fa-times-circle"></i></button>
+    
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, exercitationem!</p>
+                    <p class="d-flex align-items-center gap-2">
+                      <label for="">Cantidad </label>
+                      <button class="btn btn-light">-</button>
+                      <output style="width:50px"  class="form-control text-center">
+                        1
+                      </output>
+                      <button class="btn btn-light">+</button>
+                      <a href="#" class="btn btn-outline-dark">Ver más</a>
+                    </p>
+                  </div>
+               
                 </div>
-                <div class="cart-product-price-container">
-                    <p class="cart-product-price">$20.000</p>
+              </div>
+  
+              <!-- COURSE TEMPLATE CARD -->
+              <div class="card col-12 col-lg-10 my-5">
+                <div class="card-body row">
+                  
+                  <img class="col-4" style="object-fit: contain;" src="https://wpdirecto.com/wp-content/uploads/2017/08/alt-de-una-imagen.png" alt="">
+                  <div class="col-8 position-relative">
+                    <button class="fs-5 p-0 border-0 bg-transparent position-absolute text-danger " style="top:-3px;right:10px"><i style="padding:2px" class="rounded-circle btn-clear far fa-times-circle"></i></button>
+    
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, exercitationem!</p>
+                    <p class="d-flex align-items-center gap-2">
+                      <label for="">Cantidad </label>
+                      <button class="btn btn-light">-</button>
+                      <output style="width:50px"  class="form-control text-center">
+                        1
+                      </output>
+                      <button class="btn btn-light">+</button>
+                      <a href="#" class="btn btn-outline-dark">Ver más</a>
+                    </p>
+                  </div>
+               
                 </div>
-            </article>
-            <article class="cart-product">
-                <img class="cart-product-img" src="/images/anana_fizz_real.png" alt="">
-                <h5 class="cart-product-title col-4 d-flex align-items-center">Anana Fizz Real</h5>
-                <div class="product-buttons">
-                    <div class="product-quantity">
-                        <button class=" cart-product-plus"><i class="bi bi-plus-lg"></i></button>
-                        <p class="cart-product-quantity">2</p>
-                        <button class="cart-product-minus"><i class="bi bi-dash"></i></button>
-                    </div>
-                    <button class="cart-product-trash"><i class="bi bi-trash-fill"></i></i></button>
+              </div>
+  
+              <!-- COURSE TEMPLATE CARD -->
+              <div class="card col-12 col-lg-10 my-5">
+                <div class="card-body row">
+                  
+                  <img class="col-4" style="object-fit: contain;" src="https://wpdirecto.com/wp-content/uploads/2017/08/alt-de-una-imagen.png" alt="">
+                  <div class="col-8 position-relative">
+                    <button class="fs-5 p-0 border-0 bg-transparent position-absolute text-danger " style="top:-3px;right:10px"><i style="padding:2px" class="rounded-circle btn-clear far fa-times-circle"></i></button>
+    
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, exercitationem!</p>
+                    <p class="d-flex align-items-center gap-2">
+                      <label for="">Cantidad </label>
+                      <button class="btn btn-light">-</button>
+                      <output style="width:50px"  class="form-control text-center">
+                        1
+                      </output>
+                      <button class="btn btn-light">+</button>
+                      <a href="#" class="btn btn-outline-dark">Ver más</a>
+                    </p>
+                  </div>
+               
                 </div>
-                <div class="cart-product-price-container">
-                    <p class="cart-product-price">$20.000</p>
+              </div>
+              <!-- COURSE TEMPLATE CARD -->
+              <div class="card col-12 col-lg-10 my-5">
+                <div class="card-body row">
+                  
+                  <img class="col-4" style="object-fit: contain;" src="https://wpdirecto.com/wp-content/uploads/2017/08/alt-de-una-imagen.png" alt="">
+                  <div class="col-8 position-relative">
+                    <button class="fs-5 p-0 border-0 bg-transparent position-absolute text-danger " style="top:-3px;right:10px"><i style="padding:2px" class="rounded-circle btn-clear far fa-times-circle"></i></button>
+    
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, exercitationem!</p>
+                    <p class="d-flex align-items-center gap-2">
+                      <label for="">Cantidad </label>
+                      <button class="btn btn-light">-</button>
+                      <output style="width:50px"  class="form-control text-center">
+                        1
+                      </output>
+                      <button class="btn btn-light">+</button>
+                      <a href="#" class="btn btn-outline-dark">Ver más</a>
+                    </p>
+                  </div>
+               
                 </div>
-            </article>
-            <article class="cart-product">
-                <img class="cart-product-img" src="/images/anana_fizz_real.png" alt="">
-                <h5 class="cart-product-title col-4 d-flex align-items-center">Anana Fizz Real</h5>
-                <div class="product-buttons">
-                    <div class="product-quantity">
-                        <button class=" cart-product-plus"><i class="bi bi-plus-lg"></i></button>
-                        <p class="cart-product-quantity">2</p>
-                        <button class="cart-product-minus"><i class="bi bi-dash"></i></button>
-                    </div>
-                    <button class="cart-product-trash"><i class="bi bi-trash-fill"></i></i></button>
+              </div>
+              <!-- COURSE TEMPLATE CARD -->
+              <div class="card col-12 col-lg-10 my-5">
+                <div class="card-body row">
+                  
+                  <img class="col-4" style="object-fit: contain;" src="https://wpdirecto.com/wp-content/uploads/2017/08/alt-de-una-imagen.png" alt="">
+                  <div class="col-8 position-relative">
+                    <button class="fs-5 p-0 border-0 bg-transparent position-absolute text-danger " style="top:-3px;right:10px"><i style="padding:2px" class="rounded-circle btn-clear far fa-times-circle"></i></button>
+    
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, exercitationem!</p>
+                    <p class="d-flex align-items-center gap-2">
+                      <label for="">Cantidad </label>
+                      <button class="btn btn-light">-</button>
+                      <output style="width:50px"  class="form-control text-center">
+                        1
+                      </output>
+                      <button class="btn btn-light">+</button>
+                      <a href="#" class="btn btn-outline-dark">Ver más</a>
+                    </p>
+                  </div>
+               
                 </div>
-                <div class="cart-product-price-container">
-                    <p class="cart-product-price">$20.000</p>
-                </div>
-            </article>
-            <article class="cart-product">
-                <img class="cart-product-img" src="/images/anana_fizz_real.png" alt="">
-                <h5 class="cart-product-title col-4 d-flex align-items-center">Anana Fizz Real</h5>
-                <div class="product-buttons">
-                    <div class="product-quantity">
-                        <button class=" cart-product-plus"><i class="bi bi-plus-lg"></i></button>
-                        <p class="cart-product-quantity">2</p>
-                        <button class="cart-product-minus"><i class="bi bi-dash"></i></button>
-                    </div>
-                    <button class="cart-product-trash"><i class="bi bi-trash-fill"></i></i></button>
-                </div>
-                <div class="cart-product-price-container">
-                    <p class="cart-product-price">$20.000</p>
-                </div>
-            </article>
-            <article class="cart-product">
-                <img class="cart-product-img" src="/images/anana_fizz_real.png" alt="">
-                <h5 class="cart-product-title col-4 d-flex align-items-center">Anana Fizz Real</h5>
-                <div class="product-buttons">
-                    <div class="product-quantity">
-                        <button class=" cart-product-plus"><i class="bi bi-plus-lg"></i></button>
-                        <p class="cart-product-quantity">2</p>
-                        <button class="cart-product-minus"><i class="bi bi-dash"></i></button>
-                    </div>
-                    <button class="cart-product-trash"><i class="bi bi-trash-fill"></i></i></button>
-                </div>
-                <div class="cart-product-price-container">
-                    <p class="cart-product-price">$20.000</p>
-                </div>
-            </article>
-            <article class="cart-product">
-                <img class="cart-product-img" src="/images/anana_fizz_real.png" alt="">
-                <h5 class="cart-product-title col-4 d-flex align-items-center">Anana Fizz Real</h5>
-                <div class="product-buttons">
-                    <div class="product-quantity">
-                        <button class=" cart-product-plus"><i class="bi bi-plus-lg"></i></button>
-                        <p class="cart-product-quantity">2</p>
-                        <button class="cart-product-minus"><i class="bi bi-dash"></i></button>
-                    </div>
-                    <button class="cart-product-trash"><i class="bi bi-trash-fill"></i></i></button>
-                </div>
-                <div class="cart-product-price-container">
-                    <p class="cart-product-price">$20.000</p>
-                </div>
-            </article>
-        </section>
-        <aside class="cart-resume">
-            <div class="cart-resume-title">
-                <div class="cart-resume-title-product">
-                    <h6>Producto Nombre 1</h6>
-                    <h6>Producto Nombre 1</h6>
-                    <h6>Producto Nombre 1</h6>
-                    <span class="borde-inferior"></span>
-                </div>
-                <p class="cart-resume-price"><span class="cart-resume-price-span-1">Total a Pagar: </span><span
-                        class="cart-resume-price-span-2">$20000</span>
-                </p>
+              </div>
+  
             </div>
-            <div class="cart-resume-button">
-                <button class="cart-resume-button-comprar" type="button">Comprar</button>
+
+          </div>
+
+          <div class="card col-4 my-5 position-sticky" style="height:fit-content;top:20px">
+            <div class="card-body my-2 d-flex flex-column gap-2">
+              <button class="btn w-100 btn-danger" id="clear-cart">Vaciar Carrito</button>
+              <button class="btn w-100 btn-success" id="btn-buy">Comprar</button>
+              <a href="#" class="btn w-100 btn-dark">Seguir mirando</a>
+              <div class="text-end fs-3">
+                <span>
+                  Total:
+                </span>
+                <output id="show-total">
+                  0
+                </output>
+              </div>
             </div>
-        </aside>
+          </div>
 
-    </main>
+        </div>
+      </main>
 
-    <%- include("../partials/footer")%>
 
-    <%- include("../partials/scripts")%>
+      <%- include('../partials/footer') %>
 
-</body>
+
+        <%- include('../partials/scripts') %>
+
+          <script src="/js/functions/cart.js"></script>
+
+  </body>
 
 </html>
