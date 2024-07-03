@@ -5,7 +5,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 7400,
       "discount": 35,
-      "category": "vinos",
+      "category": 1,
       "image": "D.V._Catena_Cabernet_-_Malbec.webp"
    },
    {
@@ -14,7 +14,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 15990,
       "discount": 30,
-      "category": "vinos",
+      "category": 1,
       "image": "Angelica_Zapata_Malbec_Alta_750cc.webp"
    },
    {
@@ -23,7 +23,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 4170,
       "discount": 25,
-      "category": "vinos",
+      "category": 1,
       "image": "Tinto_Luigi_Bosca_Malbec_750ml.webp"
    },
    {
@@ -32,7 +32,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 15990,
       "discount": 20,
-      "category": "vinos",
+      "category": 1,
       "image": "Angelica_Zapata_Malbec_Alta_750cc.webp"
    },
    {
@@ -41,7 +41,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 4175,
       "discount": 25,
-      "category": "vinos",
+      "category": 1,
       "image": "Tinto_Luigi_Bosca_Malbec_750ml.webp"
    },
    {
@@ -50,7 +50,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 7400,
       "discount": 35,
-      "category": "vinos",
+      "category": 1,
       "image": "D.V._Catena_Cabernet_-_Malbec.webp"
    },
    {
@@ -59,7 +59,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 15900,
       "discount": 10,
-      "category": "vinos",
+      "category": 1,
       "image": "Angelica_Zapata_Malbec_Alta_750cc.webp"
    },
    {
@@ -68,7 +68,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 4175,
       "discount": 25,
-      "category": "vinos",
+      "category": 1,
       "image": "Tinto_Luigi_Bosca_Malbec_750ml.webp"
    },
    {
@@ -77,7 +77,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 8000,
       "discount": 10,
-      "category": "espumantes",
+      "category": 2,
       "image": "Sidra_Real_750.png"
    },
    {
@@ -86,7 +86,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 5000,
       "discount": 10,
-      "category": "espumantes",
+      "category": 2,
       "image": "anana_fizz_real.png"
    },
    {
@@ -95,7 +95,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 15000,
       "discount": 15,
-      "category": "espumantes",
+      "category": 2,
       "image": "Champagne_Norton_extra_brut_750ml.webp"
    },
    {
@@ -104,7 +104,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 8000,
       "discount": 10,
-      "category": "espumantes",
+      "category": 2,
       "image": "Sidra_Real_750.png"
    },
    {
@@ -113,7 +113,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 5000,
       "discount": 10,
-      "category": "espumantes",
+      "category": 2,
       "image": "anana_fizz_real.png"
    },
    {
@@ -122,7 +122,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 15000,
       "discount": 15,
-      "category": "espumantes",
+      "category": 2,
       "image": "Champagne_Norton_extra_brut_750ml.webp"
    },
    {
@@ -131,7 +131,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 8000,
       "discount": 10,
-      "category": "espumantes",
+      "category": 2,
       "image": "Sidra_Real_750.png"
    },
    {
@@ -140,7 +140,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 5000,
       "discount": 10,
-      "category": "espumantes",
+      "category": 2,
       "image": "anana_fizz_real.png"
    },
    {
@@ -149,7 +149,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 15000,
       "discount": 15,
-      "category": "espumantes",
+      "category": 2,
       "image": "Champagne_Norton_extra_brut_750ml.webp"
    },
    {
@@ -158,7 +158,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 52000,
       "discount": 15,
-      "category": "whiskys",
+      "category": 3,
       "image": "Johnnie_Walker_Swing_Escoces_Blended_750ml.png"
    },
    {
@@ -167,7 +167,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 15000,
       "discount": 20,
-      "category": "whiskys",
+      "category": 3,
       "image": "White_Horse_Fine_Old_Blended_Scotch.webp"
    },
    {
@@ -176,7 +176,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 10500,
       "discount": 5,
-      "category": "whiskys",
+      "category": 3,
       "image": "Whisky_Ballantines_Finest_Blended_Scotch_700ml.webp"
    },
    {
@@ -185,7 +185,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 52000,
       "discount": 15,
-      "category": "whiskys",
+      "category": 3,
       "image": "Johnnie_Walker_Swing_Escoces_Blended_750ml.png"
    },
    {
@@ -194,7 +194,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 15000,
       "discount": 20,
-      "category": "whiskys",
+      "category": 3,
       "image": "White_Horse_Fine_Old_Blended_Scotch.webp"
    },
    {
@@ -203,7 +203,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 10500,
       "discount": 5,
-      "category": "whiskys",
+      "category": 3,
       "image": "Whisky_Ballantines_Finest_Blended_Scotch_700ml.webp"
    },
    {
@@ -212,7 +212,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 52000,
       "discount": 15,
-      "category": "whiskys",
+      "category": 3,
       "image": "Johnnie_Walker_Swing_Escoces_Blended_750ml.png"
    },
    {
@@ -221,7 +221,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 15000,
       "discount": 20,
-      "category": "whiskys",
+      "category": 3,
       "image": "White_Horse_Fine_Old_Blended_Scotch.webp"
    },
    {
@@ -230,7 +230,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 10500,
       "discount": 5,
-      "category": "whiskys",
+      "category": 3,
       "image": "Whisky_Ballantines_Finest_Blended_Scotch_700ml.webp"
    },
    {
@@ -239,7 +239,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 12330,
       "discount": 10,
-      "category": "licores",
+      "category": 4,
       "image": "Licor_Borghetti_Cafe_700ml.png"
    },
    {
@@ -248,7 +248,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 15559,
       "discount": 5,
-      "category": "licores",
+      "category": 4,
       "image": "Licor_Tres_Plumas_Triple_Sec_Naranjas_Curacao_700ml.png"
    },
    {
@@ -257,7 +257,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 19710,
       "discount": 25,
-      "category": "licores",
+      "category": 4,
       "image": "Licor_Wild_Africa_Cream_750ml_Bebida_Caramelo_Y_Crema.png"
    },
    {
@@ -266,7 +266,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 12330,
       "discount": 10,
-      "category": "licores",
+      "category": 4,
       "image": "Licor_Borghetti_Cafe_700ml.png"
    },
    {
@@ -275,7 +275,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 15559,
       "discount": 5,
-      "category": "licores",
+      "category": 4,
       "image": "Licor_Tres_Plumas_Triple_Sec_Naranjas_Curacao_700ml.png"
    },
    {
@@ -284,7 +284,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 19710,
       "discount": 25,
-      "category": "licores",
+      "category": 4,
       "image": "Licor_Wild_Africa_Cream_750ml_Bebida_Caramelo_Y_Crema.png"
    },
    {
@@ -293,7 +293,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 12330,
       "discount": 10,
-      "category": "licores",
+      "category": 4,
       "image": "Licor_Borghetti_Cafe_700ml.png"
    },
    {
@@ -302,7 +302,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 15559,
       "discount": 5,
-      "category": "licores",
+      "category":4,
       "image": "Licor_Tres_Plumas_Triple_Sec_Naranjas_Curacao_700ml.png"
    },
    {
@@ -311,7 +311,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 19710,
       "discount": 25,
-      "category": "licores",
+      "category": 4,
       "image": "Licor_Wild_Africa_Cream_750ml_Bebida_Caramelo_Y_Crema.png"
    },
    {
@@ -320,7 +320,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 9999,
       "discount": 30,
-      "category": "otros",
+      "category": 5,
       "image": "Meet_HardSeltzer_Aromas_Naturales_310ml.png"
    },
    {
@@ -329,7 +329,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 9000,
       "discount": 10,
-      "category": "otros",
+      "category": 5,
       "image": "mingo_pomelo_750ml.png"
    },
    {
@@ -338,7 +338,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 4200,
       "discount": 15,
-      "category": "otros",
+      "category": 5,
       "image": "Dr-Lemon-con-Vodka-Pomelo.png"
    },
    {
@@ -347,7 +347,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 9999,
       "discount": 30,
-      "category": "otros",
+      "category": 5,
       "image": "Meet_HardSeltzer_Aromas_Naturales_310ml.png"
    },
    {
@@ -356,7 +356,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 9000,
       "discount": 10,
-      "category": "otros",
+      "category": 5,
       "image": "mingo_pomelo_750ml.png"
    },
    {
@@ -365,7 +365,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 4200,
       "discount": 15,
-      "category": "otros",
+      "category": 5,
       "image": "Dr-Lemon-con-Vodka-Pomelo.png"
    },
    {
@@ -374,7 +374,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 9999,
       "discount": 30,
-      "category": "otros",
+      "category": 5,
       "image": "Meet_HardSeltzer_Aromas_Naturales_310ml.png"
    },
    {
@@ -383,7 +383,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 9000,
       "discount": 10,
-      "category": "otros",
+      "category": 5,
       "image": "mingo_pomelo_750ml.png"
    },
    {
@@ -392,7 +392,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 4200,
       "discount": 15,
-      "category": "otros",
+      "category": 5,
       "image": "Dr-Lemon-con-Vodka-Pomelo.png"
    },
    {
@@ -401,7 +401,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 9999,
       "discount": 30,
-      "category": "populares",
+      "category": 6,
       "image": "Meet_HardSeltzer_Aromas_Naturales_310ml.png"
    },
    {
@@ -410,7 +410,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 9000,
       "discount": 10,
-      "category": "populares",
+      "category": 6,
       "image": "mingo_pomelo_750ml.png"
    },
    {
@@ -419,7 +419,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 4200,
       "discount": 15,
-      "category": "populares",
+      "category":6,
       "image": "Dr-Lemon-con-Vodka-Pomelo.png"
    },
    {
@@ -428,7 +428,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 9999,
       "discount": 30,
-      "category": "populares",
+      "category": 6,
       "image": "Meet_HardSeltzer_Aromas_Naturales_310ml.png"
    },
    {
@@ -437,7 +437,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 9000,
       "discount": 10,
-      "category": "populares",
+      "category": 6,
       "image": "mingo_pomelo_750ml.png"
    },
    {
@@ -446,7 +446,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 4200,
       "discount": 15,
-      "category": "populares",
+      "category": 6,
       "image": "Dr-Lemon-con-Vodka-Pomelo.png"
    },
    {
@@ -455,7 +455,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 9999,
       "discount": 30,
-      "category": "populares",
+      "category": 6,
       "image": "Meet_HardSeltzer_Aromas_Naturales_310ml.png"
    }
 ]

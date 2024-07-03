@@ -8,9 +8,7 @@
     background-color: var(--letrasHeader);
 }
 
-.main-container .glider-contain-banner figure{
-    margin: 3%;
-}
+.main-container .glider-contain-banner figure{margin: 0;height: 100%;width: 100%;}
 
 .main-container .glider-contain-banner figure img{
     width: 100%;
@@ -119,7 +117,7 @@
 }
 
 .popular-products {
-    background-color: var(--letrasHeader);
+    background-color: #f1efef;
     padding: 0px 0px 50px 0px;
 }
 

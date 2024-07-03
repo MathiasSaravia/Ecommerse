@@ -4,10 +4,10 @@ module.exports = (req, res)=>{
     db.product.findAll({
         include: [{
             association:"category",
-            attributes: ["id", "name"]
+            attributes: ["id","name"]
         }]
     }).then((products) => {
         res.render("products/listProductAll",
-        {products,toThousand}) 
+        {products,toThousand})
     })      
 }

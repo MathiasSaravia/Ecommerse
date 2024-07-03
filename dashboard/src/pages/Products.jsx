@@ -31,8 +31,8 @@ const Products = () => {
       return {
         field: key,
         headerName: headerNameTable[key],
-        width: key === "description" ? 300 : 150,
-         type: typeof value, 
+        width: key === "description" ? 400 : 100,
+        /* type: typeof value, */
       }
     })
     console.log(dataProduct)

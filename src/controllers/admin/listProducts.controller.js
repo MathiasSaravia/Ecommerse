@@ -9,5 +9,5 @@ module.exports = (req, res)=>{
     }).then((products) => {
         res.render("admin/listProducts",
         {products,toThousand}) 
-    })      
+    })    
 }

@@ -15,7 +15,7 @@
                     <div class="glider-banner">
                         <div>
                             <figure>
-                                <img src="/images/banner-summer.jpg" alt="">
+                                <img src="/images/banner-bebidas.jpg" alt="">
                             </figure>
                         </div>
                         <div>
@@ -46,12 +46,12 @@
 
                     <div class="glider-contain">
                         <div class="glider">
-                            <% productsVinos.forEach(p=> { %>
+                            <% products.forEach(p=> { %>
                                 <div class="products">
                                     <article class="product-1">
                                         <a href="/detalle-de-producto/<%= p.id %>">
                                             <figure>
-                                                <img src="/images/products/<%= p.image %>" alt="">
+                                                <img src="/images/products/<%= p.imagePrincipal %>" alt="">
                                             </figure>
                                             <div class="product-details">
                                                 <p class="price-old">
@@ -66,7 +66,7 @@
                                                     </li>
                                                 </ul>
                                                 <h5>
-                                                    <%= p.name %>
+                                                    <%= p.title %>
                                                 </h5>
                                             </div>
                                         </a>
@@ -89,12 +89,12 @@
                     <div class="glider-contain">
                         <div class="glider2">
                             
-                                <% productsEspumantes.forEach(p=> { %>
+                                <% products.forEach(p=> { %>
                                     <div class="products">
                                         <article class="product-1">
                                             <a href="/detalle-de-producto/<%= p.id %>">
                                                 <figure>
-                                                    <img src="/images/products/<%= p.image %>" alt="">
+                                                    <img src="/images/products/<%= p.imagePrincipal %>" alt="">
                                                 </figure>
                                                 <div class="product-details">
                                                     <p class="price-old">
@@ -109,7 +109,7 @@
                                                         </li>
                                                     </ul>
                                                     <h5>
-                                                        <%= p.name %>
+                                                        <%= p.title %>
                                                     </h5>
                                                 </div>
                                             </a>
@@ -130,12 +130,12 @@
 
                     <div class="glider-contain">
                         <div class="glider3">
-                            <% productsWhiskys.forEach(p=> { %>
+                            <% products.forEach(p=> { %>
                                 <div class="products">
                                     <article class="product-1">
                                         <a href="/detalle-de-producto/<%= p.id %>">
                                             <figure>
-                                                <img src="/images/products/<%= p.image %>" alt="">
+                                                <img src="/images/products/<%= p.imagePrincipal %>" alt="">
                                             </figure>
                                             <div class="product-details">
                                                 <p class="price-old">
@@ -150,7 +150,7 @@
                                                     </li>
                                                 </ul>
                                                 <h5>
-                                                    <%= p.name %>
+                                                    <%= p.title %>
                                                 </h5>
                                             </div>
                                         </a>
@@ -171,12 +171,12 @@
 
                     <div class="glider-contain">
                         <div class="glider4">
-                            <% productsLicores.forEach(p=> { %>
+                            <% products.forEach(p=> { %>
                                 <div class="products">
                                     <article class="product-1">
                                         <a href="/detalle-de-producto/<%= p.id %>">
                                             <figure>
-                                                <img src="/images/products/<%= p.image %>" alt="">
+                                                <img src="/images/products/<%= p.imagePrincipal %>" alt="">
                                             </figure>
                                             <div class="product-details">
                                                 <p class="price-old">
@@ -191,7 +191,7 @@
                                                     </li>
                                                 </ul>
                                                 <h5>
-                                                    <%= p.name %>
+                                                    <%= p.title %>
                                                 </h5>
                                             </div>
                                         </a>
@@ -212,12 +212,12 @@
 
                     <div class="glider-contain">
                         <div class="glider5">
-                            <% productsOtros.forEach(p=> { %>
+                            <% products.forEach(p=> { %>
                                 <div class="products">
                                     <article class="product-1">
                                         <a href="/detalle-de-producto/<%= p.id %>">
                                             <figure>
-                                                <img src="/images/products/<%= p.image %>" alt="">
+                                                <img src="/images/products/<%= p.imagePrincipal %>" alt="">
                                             </figure>
                                             <div class="product-details">
                                                 <p class="price-old">
@@ -232,7 +232,7 @@
                                                     </li>
                                                 </ul>
                                                 <h5>
-                                                    <%= p.name %>
+                                                    <%= p.title %>
                                                 </h5>
                                             </div>
                                         </a>
@@ -250,7 +250,7 @@
                 <section class="popular-products">
                     <div class="banner-drinks">
                         <figure>
-                            <img src="/images/banner-bebidas.jpg" alt="">
+                            <img src="/images/banner-home-3.png" alt="">
                         </figure>
                     </div>
                     <h3>¡Comprá nuestros productos con descuento y recibilos hoy mismo!</h3>
@@ -258,12 +258,12 @@
 
                     <div class="glider-contain">
                         <div class="glider6">
-                            <% productsPopulares.forEach(p=> { %>
+                            <% products.forEach(p=> { %>
                                 <div class="products">
                                     <article class="product-1">
                                         <a href="/detalle-de-producto/<%= p.id %>">
                                             <figure>
-                                                <img src="/images/products/<%= p.image %>" alt="">
+                                                <img src="/images/products/<%= p.imagePrincipal %>" alt="">
                                             </figure>
                                             <div class="product-details">
                                                 <p class="price-old">
@@ -278,7 +278,7 @@
                                                     </li>
                                                 </ul>
                                                 <h5>
-                                                    <%= p.name %>
+                                                    <%= p.title %>
                                                 </h5>
                                             </div>
                                         </a>
