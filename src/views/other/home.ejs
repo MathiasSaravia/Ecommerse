@@ -89,7 +89,7 @@
                     <div class="glider-contain">
                         <div class="glider2">
                             
-                                <% products.forEach(p=> { %>
+                                <% products.filter(p => p.categoryId == 2).forEach(p=> { %>
                                     <div class="products">
                                         <article class="product-1">
                                             <a href="/detalle-de-producto/<%= p.id %>">
@@ -130,7 +130,7 @@
 
                     <div class="glider-contain">
                         <div class="glider3">
-                            <% products.forEach(p=> { %>
+                            <% products.filter(p => p.categoryId == 3).forEach(p=> { %>
                                 <div class="products">
                                     <article class="product-1">
                                         <a href="/detalle-de-producto/<%= p.id %>">
@@ -171,7 +171,7 @@
 
                     <div class="glider-contain">
                         <div class="glider4">
-                            <% products.forEach(p=> { %>
+                            <% products.filter(p => p.categoryId == 4).forEach(p=> { %>
                                 <div class="products">
                                     <article class="product-1">
                                         <a href="/detalle-de-producto/<%= p.id %>">
@@ -212,7 +212,7 @@
 
                     <div class="glider-contain">
                         <div class="glider5">
-                            <% products.forEach(p=> { %>
+                            <% products.filter(p => p.categoryId == 5).forEach(p=> { %>
                                 <div class="products">
                                     <article class="product-1">
                                         <a href="/detalle-de-producto/<%= p.id %>">
@@ -258,7 +258,7 @@
 
                     <div class="glider-contain">
                         <div class="glider6">
-                            <% products.forEach(p=> { %>
+                            <% products.filter(p => p.categoryId == 6).forEach(p=> { %>
                                 <div class="products">
                                     <article class="product-1">
                                         <a href="/detalle-de-producto/<%= p.id %>">
