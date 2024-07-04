@@ -3,7 +3,37 @@ const cutText = (text = "",long) => text.substring(0,long);
 const convertMoney = (num = 0) => num.toLocaleString({
     currency:"ARS",
     style:"currency",
-}) 
+}) ;
+
+const createAlertprogress = ({title="Realizando la compra...", html="Progreso <b></b> milisegundos." ,timer=2000}) => {
+
+  let timerInterval;
+  return Swal.fire({
+    title,
+    html,
+    timer,
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading();
+      const timer = Swal.getPopup().querySelector("b");
+      timerInterval = setInterval(() => {
+        timer.textContent = `${Swal.getTimerLeft()}`;
+      }, 100);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+    }
+  });
+  };
+
+  const alertDelate = ({title="Producto Eliminado",text="",icon="warning"}) => {
+    Swal.fire({
+      title,
+      text,
+      icon
+    });
+  }
+
 const server = "http://localhost:3050";
 let productsCart = [];
 const getShoppingCart = () => {
@@ -66,6 +96,7 @@ window.addEventListener("load", async () => {
       processReloadCart(server, containerProducts , outputTotal);
 
     } catch (error) {};
+
     btnClearCart.addEventListener("click", async () => {
       try{
         const {ok,msg} = await fetch(`${server}/api/cart/clear`,{
@@ -73,14 +104,40 @@ window.addEventListener("load", async () => {
       }).then(res => res.json());
 
       if(ok){
-        processReloadCart(server, containerProducts);
+        processReloadCart(server, containerProducts, outputTotal);
       }
   
     } catch(error){
      console.log(error)
     }
    
-    })
+    });
+
+btnBuy.addEventListener("click", async () => {
+   try{
+        const {ok,msg} = await fetch(`${server}/api/cart/completed`,{
+        method:"PATCH"
+      }).then(res => res.json());
+
+      if(ok){
+        const result = await createAlertprogress({
+          title: "Completando compra...",
+          timer: 4000,
+        })
+        if (result.dismiss === Swal.DismissReason.timer) {
+          processReloadCart(server, containerProducts, outputTotal);
+
+          setTimeout(() => {
+            location.href = "/";
+          }, 1000);
+        }
+      }
+    } catch(error){
+     console.log(error)
+    }
+   
+})
+
 });
 lessProduct = async (id) => {
   try {
@@ -125,6 +182,7 @@ const removeProductCart = async (id) => {
     }).then(res => res.json());
 
     if(ok){
+      alertDelate({title:"Producto Eliminado",text:"",icon:"success"});
       processReloadCart(server, containerProducts, outputTotal);
     }
 
