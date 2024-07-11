@@ -1,9 +1,9 @@
 const router = require("express").Router()
-const { editUserApi, updateApi, loginProcessApi, userDeleteApi } = require("../../controllers/api/auth");
+const { editUserApi, updateApi, registerProcessApi, userDeleteApi } = require("../../controllers/api/auth");
 
 /* /api/auth */
 router.get("/", editUserApi)
-router.post("/", loginProcessApi)
+router.post("/register", registerProcessApi)
 router.post("/", updateApi)
 router.delete("/", userDeleteApi)
 

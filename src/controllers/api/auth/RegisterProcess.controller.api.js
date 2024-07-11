@@ -6,11 +6,11 @@ module.exports = (req, res) => {
     const avatar = req.file
     
 db.user.create({
-    name: name.trim(),
-    surname: surname.trim(),
-    email: email.trim(),
-    password: password.trim(),
-    avatar: avatar ? avatar.filename:image,
+    name: name?.trim(),
+    surname: surname?.trim(),
+    email: email?.trim(),
+    password: password?.trim(),
+    avatar: "",
     rol:rol
 
 },

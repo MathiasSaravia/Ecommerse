@@ -1,8 +1,8 @@
-const loginProcessControllerApi = require("./loginProcess.controller.api");
+const loginProcessControllerApi = require("./RegisterProcess.controller.api");
 
 module.exports = {
     editUserApi:require("./editUser.controller.api"),
-    loginProcessApi:require("./loginProcess.controller.api"),
+    registerProcessApi:require("./RegisterProcess.controller.api"),
     updateApi:require("./updateUser.controller.api"),
     userDeleteApi:require("./userDelete.controller.api")
 }
