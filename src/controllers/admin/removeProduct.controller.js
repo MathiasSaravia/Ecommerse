@@ -1,21 +1,7 @@
-const db = require("../../database/models")
-
-module.exports = (req, res) => {
-    const {id} = req.params
-
-    db.ImagePrincipal.destroy({
-        where: {
-            productId: id
-        }
+module.exports=(req,res)=>{
+    const {id,name,image} = req.query
+    res.render("admin/deleteProduct", {id, name,image}, (err,content) => {
+        err && res.send(err.message)
+        res.render("partials/dashboard",{ views: content})
     })
-    .then(() => { 
-         db.Product.destroy({
-        where:{
-            id
-        }
-    })
-    .then(() => {
-        res.redirect('/admin/lista-de-productos')
-    })
-    })
-};
+}
