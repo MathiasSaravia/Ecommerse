@@ -7,15 +7,4 @@ module.exports = (req, res) => {
             id
         }
     })
-    .then(() => {
-        res.status(200).json({
-          ok:true,
-          msg:"producto eliminado con exito"
-        })
-      }).catch(err => {
-          res.status(500).json({
-              ok:false,
-              msg:err.message
-          })
-      })
 }

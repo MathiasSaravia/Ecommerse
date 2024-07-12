@@ -1,23 +1,5 @@
 [
    {
-      "id": 1,
-      "name": "Dv Catena Cabernet 750ml",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "price": 7400,
-      "discount": 35,
-      "category": 1,
-      "image": "D.V._Catena_Cabernet_-_Malbec.webp"
-   },
-   {
-      "id": 2,
-      "name": "Angelina Zapata Malbec 750ml",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "price": 15990,
-      "discount": 30,
-      "category": 1,
-      "image": "Angelica_Zapata_Malbec_Alta_750cc.webp"
-   },
-   {
       "id": 3,
       "name": "Tinto Luigi Bosca Malbec 750ml",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -302,7 +284,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 15559,
       "discount": 5,
-      "category":4,
+      "category": 4,
       "image": "Licor_Tres_Plumas_Triple_Sec_Naranjas_Curacao_700ml.png"
    },
    {
@@ -419,7 +401,7 @@
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 4200,
       "discount": 15,
-      "category":6,
+      "category": 6,
       "image": "Dr-Lemon-con-Vodka-Pomelo.png"
    },
    {
