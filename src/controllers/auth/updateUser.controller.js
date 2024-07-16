@@ -9,7 +9,7 @@ module.exports = (req, res) => {
     }
 
     const { id } = req.params;
-    const { name, email, lastname, password } = req.body;
+    const { name, email, surname, password } = req.body;
 
     db.user.findByPk(id)
         .then(user => {
@@ -19,7 +19,7 @@ module.exports = (req, res) => {
 
             user.name = name;
             user.email = email;
-            user.lastname = lastname;
+            user.surname = surname;
             if (password.trim().length > 1) {
                 user.password = bcrypt.hashSync(password, 10);
             }
