@@ -24,7 +24,7 @@ export const Contentgenres = () => {
     <div className="col-lg-6 mb-4">						
     <div className="card shadow mb-4">
       <div className="card-header py-3">
-        <h5 className="m-0 font-weight-bold text-gray-800">Generos disponibles</h5>
+        <h5 className="m-0 font-weight-bold text-gray-800">Categorias disponibles</h5>
       </div>
       <div className="card-body">
         <div className="row">
